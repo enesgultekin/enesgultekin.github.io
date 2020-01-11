@@ -4,4 +4,4 @@ layout: about
 
 <strong>Blog Contents:</strong>
 
--A little bit study
+-A little bit student.
