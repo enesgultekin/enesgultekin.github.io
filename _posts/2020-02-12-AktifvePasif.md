@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algoritmalar ve Akış Diyagramları
+title: Sızma Testlerinde Aktif Ve Pasif Bilgi Toplama
 excerpt: "Postlar "
 categories: [code]
 comments: true
@@ -45,3 +45,5 @@ comments: true
 
 <p>TCP/IP (Transmission Control Protocol/Internet Protocol)   ve OSI (Open  Systems Interconnection) internet ortamında sistemlerin birbirleri ile iletişim halinde bulunabilmesine ve veri alışverişi yapabilmelerine olanak sağlayan iletişim protokolleridir. Dünya genelinde en çok kullanılan iletişim protokollerinin başında TCP/IP gelmektedir.Birçok protokolün bir araya gelmesiyle oluşan TCP/IP  4 katmandan  OSI ise 7 katmandan oluşmaktadır. Makalenin bu kısmında ilk olarak OSI Katmanları incelenmiştir. </p><br><br>
 <h3>OSI Katmanları</h3><br>
+
+<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi">
