@@ -46,4 +46,47 @@ comments: true
 <p>TCP/IP (Transmission Control Protocol/Internet Protocol)   ve OSI (Open  Systems Interconnection) internet ortamında sistemlerin birbirleri ile iletişim halinde bulunabilmesine ve veri alışverişi yapabilmelerine olanak sağlayan iletişim protokolleridir. Dünya genelinde en çok kullanılan iletişim protokollerinin başında TCP/IP gelmektedir.Birçok protokolün bir araya gelmesiyle oluşan TCP/IP  4 katmandan  OSI ise 7 katmandan oluşmaktadır. Makalenin bu kısmında ilk olarak OSI Katmanları incelenmiştir. </p><br><br>
 <h3>OSI Katmanları</h3><br>
 
-<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi">
+<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi"><br>
+<strong>Application Layer(Uygulama Katmanı)</strong>:Kullanıcının bağlantıyı uygulamalar ile sağladığı  katmandır. Örnek olarak <br>Brovser:HTTP <br>File Transfer:FTP <br>Virtual Terminal:Telnet<br>E-Mail:SMTP.<br><br>
+<strong>Presentation Layer(Sunum Katmanı)</strong>:Gelen veriyi sistemin okuyabileceği dile çevirir yani translation işlemleri bu katmanda yapılır. Şifreleme,şifre çözme, sıkıştırma ve açma işlemleri bu katmanda yapılır.Verinin güvenliğini bu katmanda böylece sağlamış olur.<br><br>
+<strong>Session Layer(Oturum Katmanı)</strong>:Kullanıcının sistem üzerindeki oturum açma işlemlerinin yapıldığı katmandır.Oturumun açılması,yönetilmesi ve yetkilendirilmesi bu katmanda gerçekleşir.Haberleşmeyi ve gelen verinin eksik ya da hatalı olup olmadığını kontrol eder.Örnek olarak NFS,ASP,SQL ve Telnet bu katmanda çalışır. </strong><br><br>
+<strong>Transport Layer(Taşıma Katmanı)</strong>:Veriyi segmentler halinde bölerek sınıflandırır.Gelen veriyi de sırasına göre birleştirmeyi sağlar.Karşı sistem ile ortak bir alış-veriş hızı belirler(Flow Control).Verinin karşı tarafa doğru iletilip iletilmediğini de kontrol eder.TCP ve UDP bu katmandadır.<br><br>
+<strong>Network Layer(Ağ Katmanı)</strong>:Mantıksal ve Fiziksel adresleme işlemleri bu katmanda yapılır.Verinin nereye iletileceğini yönlendiriciler(Router) ile kararlaştırır. İletilen veri blokları paket olarak adlandırılır. IP bu katmandadır.<br><br>
+<strong>Data Link Layer(Veri İletim Katmanı)</strong>:Ağ katmanından alınan verileri hatalarından arındırılmış olarak çerçeveler(frame) halinde fiziksel katmana gönderir.<br><br>
+<strong>Physical Layer(Fiziksel Katman)</strong>:Gelen bit verilerini kablo,fiber ve wifi gibi aktarma yolları ile gönderir.<br><br>
+
+<h3>TCP/IP Katmanları</h3><br>
+ 
+<img src="/resimler/bilgi toplama/ip/tcpip.JPG" alt="tcpip"><br>
+<strong>Uygulama Katmanı (Application Layer)</strong>: Farklı sunucular arasında gerçekleşen iletişimi sağlar. (HTTP,FTP,TELNET vb.)<br><br>
+<strong>Taşıma Katmanı (Transport Layer)</strong>:Verinin nasıl gönderileceği belirlenir.TCP ve UDP protokolleri bu katmanda gerçekleşir.<br><br>
+<strong>Ağ Katmanı (Network Layer)</strong>:IP katmanı olarak geçer. Uç sistem ile ağ arasındaki lojik arabirime ilişkin katmandır.<br><br>
+<strong>Fiziksel Katman (Physical Layer)</strong>:İletişim ortamının özelliklerini,haberleşme hızını  ve kodlama şemasını belirler.<br><br>
+
+
+<center><h1>Pasif Bilgi Toplama</h1></center>
+
+
+
+<h3>Google İle Bilgi Toplama</h3><br>
+
+Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre karşımıza sonuçlar çıkarmaktadır. Bunun yanında Google bizlere Dork diye tabir edilen spesifik arama yapabildiğimiz operatörler sunmuştur. Bu operatörleri kullanarak hedef site hakkında birçok bilgiye erişmek mümkündür. Aşağıda bu operatörler ve ne işe yaradıkları hakkında bilgiler veilmiştir.<br><br>
+
+<img src="/resimler/bilgi toplama/webs/site.JPG" alt="site"><br>
+<strong>site:</strong> Bu operatör site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar. <br><br>
+
+<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br>
+
+<strong>intitle:</strong>Bu operatör girdiğimiz kelimeleri sayfaların başlığında bularak bize listeler.<br><br>
+
+<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br>
+<strong>filetype:</strong> Bu operatör arayacağımız dosya tipine göre bize sonuç sunmaya yarar.<br><br>
+
+
+
+
+
+
+
+
+
