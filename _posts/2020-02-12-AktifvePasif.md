@@ -119,9 +119,9 @@ Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsin
 Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.
 <img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
 <ul type=”disc”>
-<strong>site:</strong> Google ile aynıdır.Site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar. <br><br>
-<strong>ext:</strong>Belirlenen dosya uzantısını içeriğinde barındıran siteleri listeler.<br><br>
-<strong>filetype:</strong> Google ile aynıdır. Dosya türüne göre sayfalar listeler.<br><br>
+<li><strong>site:</strong> Google ile aynıdır.Site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar.</li> 
+ <li><strong>ext:</strong>Belirlenen dosya uzantısını içeriğinde barındıran siteleri listeler.</li>
+ <li><strong>filetype:</strong> Google ile aynıdır. Dosya türüne göre sayfalar listeler.</li>
 <li><strong>url:</strong>Girilen kelimenin url içerisinde olduğu sayfaları listeler.</li>
 <li><strong>intitle:</strong>Google ile aynıdır. Sayfa başlıklarında arama yapmak için kullanılır.</li>
 <li><strong>hasfeed:</strong>Belirli bir web sitesi içerisinde RSS veya Atom Feed ile yayınlanmış sayfaları listeler. </li>
@@ -131,4 +131,135 @@ Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında 
 <li><strong>ip:</strong>Belirlenen IP adresinin sayfalarını listeler.</li> 
 
 </ul>
+
+<h3>Whois Analizi</h3><br>
+<p> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.</p><br><br>
+
+<hr>Örnek<hr>
+Öncelikle Terminalimizi açıyoruz ve<strong> whois “site adı” </strong> yazıp enter tuşuna basıyoruz. <br><br>
+
+<img src="/resimler/bilgi toplama/whois/whois1.JPG" alt="whois"><br><br>
+
+<img src="/resimler/bilgi toplama/whois/whois2.JPG" alt="whois2"><br><br>
+Gördüğünüz gibi site sahibinin birçok bilgisi karşımıza çıktı.Bunu birde whois.net sitesi üzerinden yaparak gösterelim.<br><br>
+<hr>Örnek<hr>
+Öncelikle whois.net adlı sitemize giriyoruz.Daha sonra karşımıza çıkan arama motoruna hedef domain adresini yazıyoruz.Enter tuşuna basıp bekliyoruz. <br><br>
+
+<img src="/resimler/bilgi toplama/whois/whois3.JPG" alt="whois3"><br><br>
+
+<img src="/resimler/bilgi toplama/whois/whois4.JPG" alt="whois3"><br><br>
+
+<h3>Reverse Whois</h3><br>
+<p>Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.</p><br><br>
+
+İlk olarak sitemize giriyoruz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
+
+<img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
+
+Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini listeliyor.<br><br>
+
+<img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
+
+<h3>IP Aralığı Tespit Etme</h3><br>
+İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
+
+<h4>Arin.Net</h4>
+
+İlk göstereceğimiz sitenin adı Arin.Net. Siteye <a href=https://www.arin.net” target=”_blank”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
+
+İlk olarak sitemize giriş yaptıktan sonra pencerenin sağ üst kısmında bulunan arama kutucuğuna hedef sitenin IP adresini yazıyoruz.Enter tuşuna basıp bekliyoruz. <br><br>
+
+<img src="/resimler/bilgi toplama/aralık/arin1.JPG" alt="arin"><br><br>
+
+
+Network kısmında bize sitenin hangi IP aralığında olduğunu gösteriyor.<br><br>
+<img src="/resimler/bilgi toplama/aralık/arin2.JPG" alt="arin"><br><br>
+
+<h4>Ripe.Net</h4><br>
+
+İkinci sorgulama yapacağımız sitemiz ise Ripe.Net. Siteye <a href=”https://www.ripe.net/” target=”_blank”>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.<br><br>
+
+Sitemize girdiğimizde karşımıza gelen pencerede, sağ üst köşede bulunan arama kutucuğuna hedef IP adresimizi giriyoruz ve enter tuşuna basıp bekliyoruz.<br><br>
+
+<img src="/resimler/bilgi toplama/aralık/ripe1.JPG" alt="ripe"><br><br>
+
+
+Inetnum kısmında sitenin hangi IP aralığında olduğunu biz gösteriyor.<br><br>
+
+<img src="/resimler/bilgi toplama/aralık/ripe2.JPG" alt="ripe"><br><br>
+
+<h4>Apnic.Net</h4><br>
+
+Üçüncü sorgulama yapacağımız site ise Apnic.Net.Siteye <a href=”https://www.apnic.net/” target=”_blank”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
+
+Siteye girdiğimizde sağ üst kısımdaki arama kutucuğuna hedef IP adresini yazıp enter tuşuna basıp bekliyoruz.<br><br>
+
+
+<img src="/resimler/bilgi toplama/aralık/apnic1.JPG" alt="apnic1"><br><br>
+Inetnum kısmında bize IP aralığını gösteriyor.<br><br>
+<img src="/resimler/bilgi toplama/aralık/apnic2.JPG" alt="apnic2"><br><br>
+<center><h1>Archive.Org Nedir?</h1></center><br>
+1996 yılında kurulmuş olan bu site kullanıcılara internet üzerinde kaydettiği dökümanları sunmaktadır.Bu dökümanlar içerisinde resim,video,müzik,kitap,yazılım gibi bir çok seçenek sunmaktadır.Bizim ilgili olduğumuz alan ise bu sitenin aynı zamanda web sitelerinin belirli aralıklarla görüntüsünü kaydetmesidir. Bu yol bize kapanmış bir sitenin, kapanmadan önceki görüntülerine erişme imkânı sağlamaktadır.<br><br>
+
+İlk olarak sitemize giriyoruz.<a href=https://archive.org>Buraya Tıklayarak Ulaşabilirsiniz.</a>Sol üst köşeden sarı renkle gösterilmiş olan WEB kısmına tıklıyoruz. Karşımıza WaybackMachine adında bir tarama kutucuğu çıkıyor. <br><br>
+
+<img src="/resimler/bilgi toplama/archive/archive1.JPG" alt="archive1"><br><br>
+Bu arama kutucuğuna hedef sitemizin adresini giriyoruz ve enter tuşuna basıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/archive/archive2.JPG" alt="archive2"><br><br>
+Karşımıza yılların sıralandığı çubuk şeklinde bir tarih sırası ve altında ise  ay ve günlerin olduğu bir tarih paneli çıkıyor. Yılların belirtildiği çubuğun olduğu kısımda ise hangi yıllar ne kadar görüntü almışsa onu ifade eden bir histogram grafiği mevcut. Altında ise ayların içinde mavi ile işaretlenmiş günler mevcut. Bu mavi işaretle gösterilmiş olan günler bize o gün görüntü kaydının alındığını ifade etmektedir.Biz 2005 yılını seçtik ve 23 Şubat tarihli görüntü kaydına tıkladık.<br><br>
+<img src="/resimler/bilgi toplama/archive/archive3.JPG" alt="archive3"><br><br>
+Gördüğünüz gibi seçtiğimiz tarihdeki sitenin görüntüsünü bizlere sundu.<br><br>
+h5>YouGetSignal İle Bilgi Toplama</h5>
+	
+Pasif bilgi toplama sürecinde bize yardımcı olan sitelerden bir diğeri de YouGetSignal adlı web sitesidir.Siteye <a href=https://www.yougetsignal.com> BURAYA TIKLAYARAK</a> ulaşabilirsiniz.
+<br>
+İlk olarak sitemize giriş yapıyoruz. Karşımıza tools kısımlı bir pencere çıkıyor. Burada site içerisinde yapabileceğimiz taramalar mevcuttur. Her birinin açıklaması aşağıda verilmiştir.
+<img src="/resimler/bilgi toplama/webs/yougetsignal.JPG" alt="yougetsignal"><br><br>
+
+<ul type=”disc”>
+<li><strong>Port Forwarding Tester</strong>:Hedef sitenin belirtilen portunun açık olup olmadığını bulur.</li> 
+<li><strong>What Is My Ip Adress?</strong>:Bağlantı sağladığınız bilgisayarın IP adresini gösterir.</li>
+<li><strong>Network Location Tool</strong>:Hedef adresin hangi konumda olduğunu harita üzerinde gösterir. </li>
+<li><strong>Phone Number Geolocator</strong>:Sadece ABD hatlarını destekleyen numara sorgulama aracı.</li>
+<li><strong>Reverse E-Mail Lookup Tool</strong>:Girilen e-mail adresinin kime ait olduğunu sosyal medya üzerinde arama yaparak bulmaya yarar.</li>
+<li><strong>Reverse IP Domain Check</strong>:Ters IP sorgulaması yapmaya yarar.</li>
+<li><strong>Whois Lookup Tool</strong>:Whois sorgulaması yapmaya yarar.</li>
+</ul>
+
+<h5>Netcraft İle Bilgi Toplama</h5><br>
+
+Sıkça kullanılan sitelerden bir diğeri de Netcraft. Benim de oldukça hoşuma giden bu web sitesi sayesinde hedef sistemin DNS bilgileri,İşletim Sistemleri ve IP bilgileri gibi daha bir çok bilgiye erişmek mümkün. Biz Netcraft sitesinin Site Report kısmını kullanıyoruz.<a href=https://sitereport.netcraft.com/>BURAYA TIKLAYARAK</a> siteye ulaşabilirsiniz.
+Sitemize girdikten sonra karşımıza çıkan arama bölümüne hedef site adını yazıyoruz. <br><br>
+<img src="/resimler/bilgi toplama/webs/netcraft.JPG" alt="netcraft"><br><br>
+
+<img src="/resimler/bilgi toplama/webs/netcraft2.JPG" alt="netcraft2"><br><br>
+<img src="/resimler/bilgi toplama/webs/netcraft3.JPG" alt="netcraft3"><br><br>
+
+<h5>Shodan İle Bilgi Toplama</h5><br>
+Shodan diğer arama motorlarından farklı olarak web sitelerinden ziyade bizlere internete açık olan sunucular hakkında bilgi vermektedirOyun Sunucuları,Veritabanları,Kameralar ve giriş panelleri açık olan bir çok sunucuyu bizlere göstermektedir. Shodan kullanımı aşağıda gösterilmiştir.<br>
+Siteye <a href=https://shodan.io>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.
+Öncelikle sitemize giriyoruz.
+
+<img src="/resimler/bilgi toplama/webs/shodan.JPG" alt="shodan"><br><br>
+
+
+Spesifik olarak arama gerçekleştirmeden önce site içerisinde bulunan hazır araçları göstermek istiyorum. Bunun için arama kutucuğunun altında bulunan Explore kısmına tıklıyoruz.
+
+
+<img src="/resimler/bilgi toplama/webs/shodanexplore.JPG" alt="shodan"><br><br>
+Daha sonra karşımıza gelen ekranda farklı araçların olduğunu görüyorsunuz. Databases,Video Games, Industrial Control Systems,Webcam, Netcam, Cams gibi.
+
+<img src="/resimler/bilgi toplama/webs/shodanexplore1.JPG" alt="shodan"><br><br>
+
+
+Biz örnek olarak bir sunucularına erişim olan Webcam taraması yapacağız. Webcam kısmına tıklıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/webs/shodanexplore2.JPG" alt="shodan"><br><br>
+
+Karşımıza sunucusu açık olan Webcam listesini çıkardı. İlk sıradakine tıklıyoruz ve daha detaylı bilgi ediniyoruz.
+
+
+
+
+
+
 
