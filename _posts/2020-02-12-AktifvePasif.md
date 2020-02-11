@@ -9,7 +9,7 @@ comments: true
 
 <p>Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için farklı kaynaklardan bilgi alışverişi yaparız. Örnek olarak bilmediğimiz bir yere giderken gidilecek yer hakkında bigli edinmeye çalışırız.Nasıl gidebiliriz, hangi yollardan gidebiliriz,ya da en kısa sürede oraya nasıl ulaşıabiliriz gibi araştırmalar yaparız.Ya da yurtdışında bir ülkeye gitmek istiyoruz. O ülkeye gidebilmek için ne yapmamız gerekir, hangi evraklar gereklidir ya da o ülkenin kültüründe neler vardır gibi araştırmalar yaparız.Yani gidilecek yer ile ilgili bilgi edinmeye çalışırız.Sosyal hayatımızda olduğu gibi, sızma testlerinde de ilk olarak yapılması gereken şey bilgi toplamaktır. Site hakkında bir araştırma yapmadan, bilgi sahibi olmadan sızma girişiminde bulunmak pek de akıllıca bir seçenek değildir. Bir sızma testinde hedef sistem hakkında bilgi toplamak, o sistemi daha iyi tanımak ve bunun sonucunda bir yol haritası belirlemek için oldukça önemlidir.Örnek vermek gerekirse sızılmak istenilen sunucunun kullandığı güvenlik duvarının ismini öğrenmek, o duvarın ne gibi zafiyetler barındırdığı hakkında bilgi araştırması yapabilmenizi sağlayacaktır. İki tür bilgi toplama yönetimi vardır<br>.
 <ul type=”disc”>
-<li>Pasif Bilgi toplama </li
+ <li>Pasif Bilgi toplama </li>
 <li>Aktif Bilgi toplama </li>
 </ul></p><br><br>
 
@@ -72,24 +72,30 @@ comments: true
 
 Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre karşımıza sonuçlar çıkarmaktadır. Bunun yanında Google bizlere Dork diye tabir edilen spesifik arama yapabildiğimiz operatörler sunmuştur. Bu operatörleri kullanarak hedef site hakkında birçok bilgiye erişmek mümkündür. Aşağıda bu operatörler ve ne işe yaradıkları hakkında bilgiler veilmiştir.<br><br>
 
-<img src="/resimler/bilgi toplama/webs/site.JPG" alt="site"><br><br>
+
 <strong>site:</strong> Bu operatör site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar. <br><br>
+<img src="/resimler/bilgi toplama/webs/site.JPG" alt="site"><br><br>
 
-<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br><br>
+
 <strong>intitle:</strong>Bu operatör girdiğimiz kelimeleri sayfaların başlığında bularak bize listeler.<br><br>
+<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br><br>
 
-<img src="/resimler/bilgi toplama/webs/filetype.JPG" alt="filetype"><br><br>
 <strong>filetype:</strong> Bu operatör arayacağımız dosya tipine göre bize sonuç sunmaya yarar.<br><br>
+<img src="/resimler/bilgi toplama/webs/filetype.JPG" alt="filetype"><br><br>
 
 
-<img src="/resimler/bilgi toplama/webs/inurl.JPG" alt="inurl"><br><br>
 <strong>inurl:</strong>Bu operatör girilen kelimenin url içerisinde olduğu sayfaları listeler.<br><br>
-<img src="/resimler/bilgi toplama/webs/related.JPG" alt="related"><br><br>
+<img src="/resimler/bilgi toplama/webs/inurl.JPG" alt="inurl"><br><br>
+
+
 <strong>related:</strong>Bu operatör girilen web sayfasının benzerlerini listeler.<br><br>
-<img src="/resimler/bilgi toplama/webs/info.JPG" alt="info"><br><br>
+<img src="/resimler/bilgi toplama/webs/related.JPG" alt="related"><br><br>
+
 <strong>info:</strong>Bı operatör girilen web sayfası hakkında genel bilgileri içeren siteleri listeler.<br><br>
-<img src="/resimler/bilgi toplama/webs/intext.JPG" alt="intext"><br><br>
+<img src="/resimler/bilgi toplama/webs/info.JPG" alt="info"><br><br>
+
 <strong>intext:</strong>Bu operatör girilen kelimeyi site sayfaları içerisinde aramaya yarar.<br><br>
+<img src="/resimler/bilgi toplama/webs/intext.JPG" alt="intext"><br><br>
 
 Ayrıca işinize yarayabilecek birkaç operatör de aşağıda listelenmiştir.
 <ul type=”circle”>	
@@ -108,4 +114,21 @@ Ayrıca işinize yarayabilecek birkaç operatör de aşağıda listelenmiştir.
 Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsiniz. Bunların yanında hazır olarak kullanıcılar tarafından yayınlanan dorkların listesi <a href=”https://www.exploit-db.com/google-hacking-database”>BU SİTEDE </a>mevcuttur.<br><br>
 
 
+
+<h4>Bing İle Tarama</h4><br>
+Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.
+<img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
+<ul type=”disc”>
+<strong>site:</strong> Google ile aynıdır.Site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar. <br><br>
+<strong>ext:</strong>Belirlenen dosya uzantısını içeriğinde barındıran siteleri listeler.<br><br>
+<strong>filetype:</strong> Google ile aynıdır. Dosya türüne göre sayfalar listeler.<br><br>
+<li><strong>url:</strong>Girilen kelimenin url içerisinde olduğu sayfaları listeler.</li>
+<li><strong>intitle:</strong>Google ile aynıdır. Sayfa başlıklarında arama yapmak için kullanılır.</li>
+<li><strong>hasfeed:</strong>Belirli bir web sitesi içerisinde RSS veya Atom Feed ile yayınlanmış sayfaları listeler. </li>
+<li><strong>feed:</strong>Aranılan kelimeye göre RSS ve Atom Feed içeren sayfaları bulur.</li>
+<li><strong>loc:</strong>Aranılan lokasyon içerisinde bulunan web sayfalarını gösterir.</li>
+<li><strong>language:</strong>Sadece belirlenen dildeki sayfaları taramaya yarar..</li>
+<li><strong>ip:</strong>Belirlenen IP adresinin sayfalarını listeler.</li> 
+
+</ul>
 
