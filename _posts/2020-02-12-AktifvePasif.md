@@ -72,21 +72,40 @@ comments: true
 
 Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre karşımıza sonuçlar çıkarmaktadır. Bunun yanında Google bizlere Dork diye tabir edilen spesifik arama yapabildiğimiz operatörler sunmuştur. Bu operatörleri kullanarak hedef site hakkında birçok bilgiye erişmek mümkündür. Aşağıda bu operatörler ve ne işe yaradıkları hakkında bilgiler veilmiştir.<br><br>
 
-<img src="/resimler/bilgi toplama/webs/site.JPG" alt="site"><br>
+<img src="/resimler/bilgi toplama/webs/site.JPG" alt="site"><br><br>
 <strong>site:</strong> Bu operatör site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar. <br><br>
 
-<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br>
-
+<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br><br>
 <strong>intitle:</strong>Bu operatör girdiğimiz kelimeleri sayfaların başlığında bularak bize listeler.<br><br>
 
-<img src="/resimler/bilgi toplama/webs/intitle.JPG" alt="intitle"><br>
+<img src="/resimler/bilgi toplama/webs/filetype.JPG" alt="filetype"><br><br>
 <strong>filetype:</strong> Bu operatör arayacağımız dosya tipine göre bize sonuç sunmaya yarar.<br><br>
 
 
+<img src="/resimler/bilgi toplama/webs/inurl.JPG" alt="inurl"><br><br>
+<strong>inurl:</strong>Bu operatör girilen kelimenin url içerisinde olduğu sayfaları listeler.<br><br>
+<img src="/resimler/bilgi toplama/webs/related.JPG" alt="related"><br><br>
+<strong>related:</strong>Bu operatör girilen web sayfasının benzerlerini listeler.<br><br>
+<img src="/resimler/bilgi toplama/webs/info.JPG" alt="info"><br><br>
+<strong>info:</strong>Bı operatör girilen web sayfası hakkında genel bilgileri içeren siteleri listeler.<br><br>
+<img src="/resimler/bilgi toplama/webs/intext.JPG" alt="intext"><br><br>
+<strong>intext:</strong>Bu operatör girilen kelimeyi site sayfaları içerisinde aramaya yarar.<br><br>
 
+Ayrıca işinize yarayabilecek birkaç operatör de aşağıda listelenmiştir.
+<ul type=”circle”>	
+<li><strong>map:</strong>Aranılan lokasyona ait konum bilgilerini gösterir.</li>
+<li><strong>cache:</strong>Kapanmış olan sitelerin son halini görebilirsiniz.Ayrıca Google üzerinde en son belleğin ne zaman güncellendiğini görebilirsiniz.</li>
+<li><strong>link:</strong>Girdiğiniz site linki üzerindeki sayfaların tümünü listeler.</li>
+<li><strong>book:</strong>Google kütüphane içinde bulunan kitapları arayabilirsiniz.</li>
+<li><strong>author:</strong>Bir kullanıcının,yazarın metinlerini listeler. </li>
+<li><strong>groups:</strong>Belirlediğiniz bir grup ile ilgili sonuçları size listeler.</li>
+<li><strong>daterange:</strong>Belirlenen tarih aralığındaki sayfaları listeler.</li>
+<li><strong>allintext:</strong>Yazılan birden fazla kelimelerin hepsinin içerikte var olduğu sayfaları listeler.</li>
+<li><strong>ext:</strong>Filetype ile hemen hemen aynıdır.Girilen dosya türüne göre sonuçları listeler.</li>
+<li><strong>allintitle:</strong>Yazılan birden fazla kelimelerin hepsinin başlıkta var olduğu sayfaları listeler.</li>
+</ul><br>
 
-
-
+Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsiniz. Bunların yanında hazır olarak kullanıcılar tarafından yayınlanan dorkların listesi <a href=”https://www.exploit-db.com/google-hacking-database”>BU SİTEDE </a>mevcuttur.<br><br>
 
 
 
