@@ -258,8 +258,80 @@ Biz örnek olarak bir sunucularına erişim olan Webcam taraması yapacağız. W
 Karşımıza sunucusu açık olan Webcam listesini çıkardı. İlk sıradakine tıklıyoruz ve daha detaylı bilgi ediniyoruz.
 
 
+<img src="/resimler/bilgi toplama/webs/shodanweb2.JPG" alt="shodan"><br><br>
+
+Gördüğünüz gibi karşımıza o sunucunun portları,servis bilgileri ile ilgili bilgileri çıkardı.  Ayrıca tarayıcıya hedefin IP adresini yazarak yönetim paneline ulaşmak da mümkün.<br><br>
 
 
+Şimdi bizim ilgilendiğimiz bir başka kısma geçelim. Hedef site üzerinden tarama gerçekleştirelim. Sitenin arama kutucuğuna hedef site adımızı giriyoruz.
+ 
+<img src="/resimler/bilgi toplama/webs/shodansite.JPG" alt="shodan"><br><br>
+
+Taramamızı enter tuşuna basıp gerçekleştiriyoruz.<br><br>
+
+
+<img src="/resimler/bilgi toplama/webs/shodansite2.JPG" alt="shodan"><br><br>
+
+
+Çıkan sonuçlarda hedef sitenin sahip olduğu açık sunucular hakkında listeleme yaptı. Biz 2. Kısımdaki sunucuya tıklıyoruz.<br><br>
+
+<img src="/resimler/bilgi toplama/webs/shodansite3.JPG" alt="shodan"><br><br>
+
+Sunucu hakkındaki port,servis ve en önemlisi Vulnerabilities yani sunucu açıklarını bizlere listelemiş oldu.<br><br>
+
+
+Shodan ile tıpkı Google,Bing vb. arama motorlarında olduğu gibi spesifik olarak tarama yapmak da mümkündür. Bu parametreleri kendi seçiminize göre belirleyip daha detaylı aramalar gerçekleştirebilirsiniz.Şimdi bu parametrelerin bir kısmını açıklamalarıyla birlikte veriyoruz.
+
+<ul type=”disc”>
+<li><strong> country</strong>: Belirli bir ülke içindeki sunucuları aramak için kullanılır. </li>
+<li><strong>hostname </strong>:Sonuçları belirlediğiniz alan adına göre filtreler.</li>
+<li><strong>net </strong>: Sonuçları belirlediğiniz IP adresine göre filtreler.</li>
+<li><strong>os </strong>: Belirlediğiniz işletim sistemini içeren sonuçları filtreler.</li>
+<li><strong> port</strong>: Belirlediğiniz port sayısının içerdiği sunucuları filtreler.</li>
+<li><strong> city</strong>: Belirlediğiniz şehre göre sonuçları listeler.</li>
+</ul>
+
+<h4>BinaryEdge Üzerinden Bilgi Toplama</h4><br>
+Diğer sitelerdan farklı olarak üyelik oluşturmamız gereken bir sitedir. Üyelik oluşturmak için <a href=”https://app.binaryedge.io/sign-up”>BURAYA TIKLAYIN</a>. Üyeliğimizi oluşturup aktif ettikten sonra karşımıza arama paneli çıkacaktır.
+
+
+<img src="/resimler/bilgi toplama/webs/binary.JPG" alt="binary"><br><br>
+
+Filter By kısmından aramamızı özelleştirebilirz. Ayrıca arama motorunda kullanılabilecek parametrelerin listesi de sayfanın devamında mevcuttur.<br><br>
+<img src="/resimler/bilgi toplama/webs/binary1.JPG" alt="binary"><br><br>
+Biz öncelikle tarama yapmak istediğimiz hedef site adresini arama kutucuğuna giriyoruz ve arıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/webs/binary2.JPG" alt="binary"><br><br>
+Hedef sitemizi yazıp search butonuna bastık. Karşımıza 20 adet sunucu bilgileri çıkardı. Bu sunuculardaki portları, servis türleri,konumu gibi bilgilere erişmek mümkün.<br><br>
+<img src="/resimler/bilgi toplama/webs/binary3.JPG" alt="binary"><br><br>
+<img src="/resimler/bilgi toplama/webs/binary4.JPG" alt="binary"><br><br>
+Ayrıca BinaryEdge üzerinden subdomain taraması da yapılabilmektedir. Sitenin Domain kısmına gelip hedef site adresimizi yazdığımızda bize hedef sitenin alt domainlerini listeler.<br><br>
+<img src="/resimler/bilgi toplama/webs/binary5.JPG" alt="binary"><br><br>
+<img src="/resimler/bilgi toplama/webs/binary6.JPG" alt="binary"><br><br>
+<h3>Subdomain Tespiti Nedir Nasıl yapılır?</h3>
+Subdomain sitelerin alt alan adları anlamına gelmektedir. Ana domaine bağlı olan subdomainler hosting satın alınan site tarafından sınırlı ya da sınırsız sayıda size sunulan alt alan adlarıdır. Subdomain taramaları scriptler üzerinden ya da web siteleri üzerinden yapılabilir.Makalenin devamında nasıl yapıldığına dair bilgiler mevcuttur.
+
+
+<h4>TheHarvester İle Subdomain Taraması</h4><br>
+
+Pasif Bilgi Toplama sürecinde kullanılan araçlardan biri de TheHarvester scriptidir. Kali Linux işletim sistemi üzerinde öntanımlı olarak gelen bu aracın komutları aşağıda gösterilmiştir.<br><br>
+
+<img src="/resimler/bilgi toplama/subdomain/harves1.JPG" alt="harves"><br><br>
+
+<ul type=”disc”>
+<li><strong>-d</strong>:Hedef site adresinin belirtilmesinde kullanılır.</li>
+<li><strong>-b</strong>:Belirtilen arama motoru üzerinden taramaları gerçekleştirir.Google,Yahoo vb.All yazarak tamamında arama gerçekleştirebilirsiniz.</li>
+<li><strong>-g</strong>:Google dork kullanarak aramaları gerçekleştirir.</li>
+<li><strong>-s</strong>:Taramaya belirtilen sayıdan başlar.</li>
+<li><strong>-v</strong>:DNS ile Hostname doğrulama yapar ve sanal makineleri arar.</li>
+<li><strong>-f</strong>:Sonuçları XML ya da HTML olarak kayıt eder.</li>
+<li><strong>-n</strong>:Bulunan aralıklarda ters DNS sorgusu yapar.</li>
+<li><strong>-c</strong>:Brute force ile subdomainleri bulur.</li>
+<li><strong>-t</strong>:DNS TLD sorgusu yapar.</li>
+<li><strong>-e</strong>:Belirlenen DNS sunucusunu kullanarak tarama yapar.</li>
+<li><strong>-p</strong>:Belirlenen host üzerinde port taraması yapar.</li>
+<li><strong>-l</strong>:Tarama sınırı belirler.</li>
+<li><strong>-h</strong>:Bulunan sonuçları SHODAN veri tabanında sorgular.</li>
+</ul><br><br>
 
 
 
