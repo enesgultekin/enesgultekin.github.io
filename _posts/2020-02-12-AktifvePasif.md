@@ -116,7 +116,7 @@ Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsin
 
 
 <h4>Bing İle Tarama</h4><br>
-Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.
+Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.<br><br>
 <img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
 <ul type=”disc”>
 <li><strong>site:</strong> Google ile aynıdır.Site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar.</li> 
@@ -131,6 +131,7 @@ Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında 
 <li><strong>ip:</strong>Belirlenen IP adresinin sayfalarını listeler.</li> 
 
 </ul>
+
 
 <h3>Whois Analizi</h3><br>
 <p> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.</p><br><br>
@@ -307,11 +308,10 @@ Hedef sitemizi yazıp search butonuna bastık. Karşımıza 20 adet sunucu bilgi
 Ayrıca BinaryEdge üzerinden subdomain taraması da yapılabilmektedir. Sitenin Domain kısmına gelip hedef site adresimizi yazdığımızda bize hedef sitenin alt domainlerini listeler.<br><br>
 <img src="/resimler/bilgi toplama/webs/binary5.JPG" alt="binary"><br><br>
 <img src="/resimler/bilgi toplama/webs/binary6.JPG" alt="binary"><br><br>
-<h3>Subdomain Tespiti Nedir Nasıl yapılır?</h3>
-Subdomain sitelerin alt alan adları anlamına gelmektedir. Ana domaine bağlı olan subdomainler hosting satın alınan site tarafından sınırlı ya da sınırsız sayıda size sunulan alt alan adlarıdır. Subdomain taramaları scriptler üzerinden ya da web siteleri üzerinden yapılabilir.Makalenin devamında nasıl yapıldığına dair bilgiler mevcuttur.
 
 
-<h4>TheHarvester İle Subdomain Taraması</h4><br>
+
+<h4>TheHarvester İle Domain Üzerinde E-Mail Keşfi</h4><br>
 
 Pasif Bilgi Toplama sürecinde kullanılan araçlardan biri de TheHarvester scriptidir. Kali Linux işletim sistemi üzerinde öntanımlı olarak gelen bu aracın komutları aşağıda gösterilmiştir.<br><br>
 
@@ -334,4 +334,109 @@ Pasif Bilgi Toplama sürecinde kullanılan araçlardan biri de TheHarvester scri
 </ul><br><br>
 
 
+Öncelikle hedef sitemizi -d parametresi ile belirtiyoruz. Daha sonra aranacak olan tarama motorunu -b ile google yapıyoruz. En son olarak 300 sayfa tarama yapmasını istiyoruz.<br><br>
+<img src="/resimler/bilgi toplama/subdomain/harves2.JPG" alt="harves"><br><br>
+<img src="/resimler/bilgi toplama/subdomain/harves3.JPG" alt="harves"><br><br>
 
+Gördüğünüz gibi karşımıza, alan adlarına kayıtlı olan e-mail adreslerini listeliyor. 
+
+<h3>Subdomain Tespiti Nedir Nasıl yapılır?</h3>
+Subdomain sitelerin alt alan adları anlamına gelmektedir. Ana domaine bağlı olan subdomainler hosting satın alınan site tarafından sınırlı ya da sınırsız sayıda size sunulan alt alan adlarıdır. Subdomain taramaları scriptler üzerinden ya da web siteleri üzerinden yapılabilir.Makalenin devamında nasıl yapıldığına dair bilgiler mevcuttur.
+
+<h4>Aquatone İle Subdomain Taraması</h4>
+Aquatone ;Aquatone-discover, Aquatone-scan, Aquatone-gather olmak üzere içinde üç farklı araç barındıran bir scripttir. Her bir araç için farklı bir yükleme yapmaya gerek yoktur.Aquatone kurduğumuzda bu üç araç da birlikte geliyor.
+Öncelikle terminalimizi açıyoruz. Daha sonra “ sudo gem install aquatone “ yazıp uygulamamızı indiriyoruz. <br><br>
+<hr>Yükleme<hr>
+ <img src="/resimler/bilgi toplama/subdomain/aquatone.JPG" alt="aquatone"><br><br>
+ 
+ <h5>Aquatone-Discover<h5><br>
+Aquatone kullanımında ilk olarak discover ile subdomain adreslerini bulmanız zorunludur. Daha sonra scan ve gather araçlarını kullanabilirsiniz.
+Aquatone-discover komutları aşağıda gösterilmiştir.<br><br>
+<hr>Komutlar<hr>
+
+  <img src="/resimler/bilgi toplama/subdomain/aquatone-discover1.JPG" alt="aquatone"><br><br>
+
+<ul type=”disc”>
+<li><strong>-(-d) –domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
+<li><strong>--nameservers</strong>: Taramada özel olarak kullanmak istediğimiz NS(Name Server) belirler.</li>
+<li><strong--fallback-nameservers</strong>:Yedek DNS sunucusu belirlemek için kullanılır.</li>
+<li><strong>--ignore-private</strong>:Özel IP adreslerine çözümlenmiş sunucuları yok sayar.</li>
+<li><strong>--set-key</strong>:Aquatone içinde bulunan Shodan,VirusTotal gibi araçları kullanabilmek için API key denilen ürün anahtarı girmek için kullanılır.</li>
+<li><strong>--list-collector</strong>: Kullanılan kollektörleri listeler.</li>
+<li><strong>--only-collector</strong>:Sadece belirtilen kollektörü çalıştırır.</li>
+<li><strong>--disable-collector</strong>:Belirlenen kollektörleri çalıştırmaz.</li>
+<li><strong>--threads</strong>:Varsayılan tarama gücünü değiştirmek için kullanılır.Default olarak 5 ile başlar.Yalnız bu sayıyı artırmak, DNS sorgulamaları yaparken daha fazla baskı uygulayacağından; karşı sistem bunu bir saldırı tespiti olarak algılayabilir.</li>
+<li><strong>--sleep</strong>:Hedef sistemde şüphe uyandırmamak için belirli aralıkta saniyeler belirlemeye yarar.Yani yapılan sorgulamaların arasına süre koymaya yarar.</li>
+<li><strong>--jitter</strong>:Sürekli aynı aralıklarla DNS sorgulaması da dikkat çekebilir.Bu komut ile –sleep değerini belli bir yüzdeliğe bölerek farklı zaman aralıklarında arama yapmasını sağlar.</li> 
+<li>--shodan-pages </strong>:İşlenecek Shodan API sayfa sayısını belirtmeye yarar.</li>
+<li></strong>--wordlist</strong>: Brute Force uygulamak istediğiniz alan adına wordlist belirlemeye yarar.</li>
+<li></strong>--netcraft</strong>:İşlenicek Netcraft sayfa sayısını belirlemeye yarar.</li>
+<li></strong>--censys-page</strong>:İşlenecek Censys API sayfa sayısını belirtmeye yarar.</li>
+<li></strong>--publicwww-pages</strong>:İşlenicek PublicWWW  sayfa sayısını belirtmeye yarar.</li>
+<li></strong>wayback-machine-timeout</strong>:Wayback Machine için saniye cinsinden zaman aşımını belirtmeye yarar.</li>
+<li></strong>--gtr-pages</strong>:İşlenecek Google Şeffaflık Raporu sayfa sayısını belirtmeye yarar.</li>
+<li><strong>--help</strong>:Kullanılabilecek parametreleri listeler.</li>
+</ul><br>
+
+İlk olarak alt domain keşfi yapmak için aquatone-discover kullanıyoruz. –d parametresi ile hedef siteyi belirtiyoruz ve taramayı gerçekleştiriyoruz.<br>
+<hr>Örnek Tarama<hr>
+  <img src="/resimler/bilgi toplama/subdomain/aquatone-discover2.JPG" alt="aquatone"><br><br>
+    <img src="/resimler/bilgi toplama/subdomain/aquatone-discover3.JPG" alt="aquatone"><br><br>
+  Gördüğünüz gibi sitenin subdomain adreslerini bize listeledi. Bunları /root/aquatone/unime.it adlı dosyanın içine txt ve json dosyası olarak kayıt etti.Artık Aquatone-scan ile port taraması yapabiliriz. <br><br>
+  
+  <h5>Aquatone-Scan</h5><br>
+
+Aquatone-discover ile subdomainleri keşfettikten sonra scan taraması ile portları tarayabilirsiniz.
+
+Aquatone-scan komutları aşağıda gösterilmiştir.<br><br>
+<img src="/resimler/bilgi toplama/subdomain/aquatone-scan.JPG" alt="aquatone"><br><br>
+<ul type=”disc”>
+<li><strong>(-d) --domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
+<li><strong>(-p) --ports</strong>: Belirlediğiniz portları taramak için kullanılır.</li>
+<li><strong>--timeout</strong>:Portları tararken zaman aşımını belirmek için kullanılır.</li>
+<li><strong>(t) --threads</strong>: Discover da olduğu gibi; Varsayılan tarama gücünü değiştirmek için kullanılır.</li>
+<li><strong>(s) --sleep</strong>: Taramayı belirli saniyeler arasında gerçekleştirir.</li>
+<li><strong>(-j) –jitter</strong>: .Sleep değerini belli bir yüzdeliğe bölerek farklı zaman aralıklarında arama yapmasını sağlar.</li>
+<li>(-h) --help</strong>:Kullanılabilir komut listesini açar.</li>
+</ul><br>
+
+<h5>Aquatone-Gather</h5><br>
+
+Port taraması yaptıktan sonra en son aşamaya geçilir. Gather ile web sitelerinin görselleri,HTTP  üst bilgilerini almak mümkündür. Aşağıda komutlar hakkında bilgi verilmiştir.<br><br
+
+<img src="/resimler/bilgi toplama/subdomain/aquatone-gather.JPG" alt="aquatone"><br><br>
+
+<ul type=”disc”>
+<li><strong>(-d) --domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
+<li><strong>--timeout</strong>:İşlemleri yaparken zaman aşımını belirmek için kullanılır.</li>
+<li><strong>(t) --threads</strong>: Discover da olduğu gibi; Varsayılan tarama gücünü değiştirmek için kullanılır.</li>
+<li><strong>(s) --sleep</strong>: Taramayı belirli saniyeler arasında gerçekleştirir.</li>
+<li><strong>(-j) –jitter</strong>: .Sleep değerini belli bir yüzdeliğe bölerek farklı zaman aralıklarında arama yapmasını sağlar.</li>
+<li>(-h) --help</strong>:Kullanılabilir komut listesini açar.</li>
+</ul><br>
+
+
+<h5>Sublist3r İle Subdomain Taraması</h5><br>
+
+Subdomain taramasında sıkça kullanılan araçlardan birisi de sublist3r scriptidir. Kullanımı ve komutları aşağıda belirtilmiştir.<br><br>
+
+
+<img src="/resimler/bilgi toplama/subdomain/sublister.JPG" alt="sublister"><br><br>
+<ul type=”disc”>
+<li><strong>-h</strong>:Kullanılabilir komut listesini açar.</li>
+<li><strong>-d</strong>: Hedef site adresini belirtmek için kullanılır.</li>
+<li><strong>-b</strong>:BruteForce yöntemi ile tarama gerçekleştirir.</li>
+<li><strong>-p</strong>:Bulunan subdomainlerin, taranacak portlarını belirtmeye yarar.</li>
+<li><strong>-v</strong>:Ayrıntılı bir biçimde tarama modunu açmak için kullanılır.</li>
+<li><strong>-t</strong>:Programın BruteForce yaparken kullanacağı güç çekirdeği sayısını belirtmek için kullanılır.</li>
+<li><strong>-e</strong>: Spesifik bir tarama motoru üzerinden tarama yapmak için kullanılır.</li>
+<li><strong>-o</strong>:Sonuçların kayıt edileceği text dosyasını belirlemek için kullanılır.</li>
+</ul> <br><br>
+
+Örnek Tarama<br><br>
+Terminal üzerinden sublist3r -d  “hedef site” -v (detaylı tarama) -p 80 ( açık 80 portlarını bul) olarak örneğimizi yapıyoruz.
+
+<img src="/resimler/bilgi toplama/subdomain/sublister1.JPG" alt="sublister"><br><br>
+<img src="/resimler/bilgi toplama/subdomain/sublister2.JPG" alt="sublister"><br><br>
+
+İlk olarak bize subdomain tespitini yaptı. Daha sonra ise bu subdomain adreslerindeki açık 80 portlarını listeledi.<br><br>
