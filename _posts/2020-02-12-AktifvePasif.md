@@ -46,7 +46,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 <p>TCP/IP (Transmission Control Protocol/Internet Protocol)   ve OSI (Open  Systems Interconnection) internet ortamında sistemlerin birbirleri ile iletişim halinde bulunabilmesine ve veri alışverişi yapabilmelerine olanak sağlayan iletişim protokolleridir. Dünya genelinde en çok kullanılan iletişim protokollerinin başında TCP/IP gelmektedir.Birçok protokolün bir araya gelmesiyle oluşan TCP/IP  4 katmandan  OSI ise 7 katmandan oluşmaktadır. Makalenin bu kısmında ilk olarak OSI Katmanları incelenmiştir. </p><br><br>
 <h3><strong>OSI Katmanları</strong></h3><br>
 
-<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi" widht="50%" height="100px"><br>
+<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi" widht="auto" height="100px"><br>
 <strong>Application Layer(Uygulama Katmanı)</strong>:Kullanıcının bağlantıyı uygulamalar ile sağladığı  katmandır. Örnek olarak <br>Brovser:HTTP <br>File Transfer:FTP <br>Virtual Terminal:Telnet<br>E-Mail:SMTP.<br><br>
 <strong>Presentation Layer(Sunum Katmanı)</strong>:Gelen veriyi sistemin okuyabileceği dile çevirir yani translation işlemleri bu katmanda yapılır. Şifreleme,şifre çözme, sıkıştırma ve açma işlemleri bu katmanda yapılır.Verinin güvenliğini bu katmanda böylece sağlamış olur.<br><br>
 <strong>Session Layer(Oturum Katmanı)</strong>:Kullanıcının sistem üzerindeki oturum açma işlemlerinin yapıldığı katmandır.Oturumun açılması,yönetilmesi ve yetkilendirilmesi bu katmanda gerçekleşir.Haberleşmeyi ve gelen verinin eksik ya da hatalı olup olmadığını kontrol eder.Örnek olarak NFS,ASP,SQL ve Telnet bu katmanda çalışır. </strong><br><br>
