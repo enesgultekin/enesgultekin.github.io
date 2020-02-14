@@ -415,8 +415,27 @@ Port taraması yaptıktan sonra en son aşamaya geçilir. Gather ile web siteler
 <li>(-h) --help</strong>:Kullanılabilir komut listesini açar.</li>
 </ul><br>
 
+<h3>Dnsmap İle Subdomain Taraması</h3><br>
 
-<h5>Sublist3r İle Subdomain Taraması</h5><br>
+DNS üzerinden subdomain tespiti yapan bir başka aracımız da dnsmap. Kullanımı basit ve sade bir araçtır. Parametreleri ve açıklamaları aşağıda verilmiştir.<br><br>
+
+<img src="/resimler/bilgi toplama/subdomain/dnsmap.JPG" alt="dnsmap"><br><br>
+
+<ul type="disc">
+	<li><strong>-w</strong>:Seçtiğiniz wordlist üzerinden tarama yapar.</li>
+	<li><strong>-r</strong>:Sonuçları txt biçiminde kayıt etmeye yarar.</li>	
+	<li><strong>-w</strong>:Sonuçlar csv biçiminde kayıt eder.</li>
+	<li><strong>-d</strong>:Sorgulamalar arası milisaniye değerinde gecikme ayarlamaya yarar.</li>
+	<li><strong>-i</strong>:Belirlediğiniz bir IP adresini taramadan çıkartır.</li>
+	</ul>
+	
+Terminalimizi açıyoruz ve dnsmap "hedef site ip" yazıyoruz. Enter tuşuna basıp taratıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/subdomain/dnsmap2.JPG" alt="dnsmap"><br><br>
+<img src="/resimler/bilgi toplama/subdomain/dnsmap2.JPG" alt="dnsmap"><br><br>	
+	
+Gördüğünüz gibi hedef sitenin bulunan alt alan adlarını bizlere gösterdi.
+	
+<h3>Sublist3r İle Subdomain Taraması</h3><br>
 
 Subdomain taramasında sıkça kullanılan araçlardan birisi de sublist3r scriptidir. Kullanımı ve komutları aşağıda belirtilmiştir.<br><br>
 
