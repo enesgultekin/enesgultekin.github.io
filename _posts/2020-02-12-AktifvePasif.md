@@ -48,7 +48,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 
 
 
-<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi" widht="20%" height="10%"><br>
+<img src="/resimler/bilgi toplama/ip/osi.jpg" alt="osi" widht="300px" height="auto"><br>
 
 
 
