@@ -60,7 +60,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 <strong>Data Link Layer(Veri İletim Katmanı)</strong>:Ağ katmanından alınan verileri hatalarından arındırılmış olarak çerçeveler(frame) halinde fiziksel katmana gönderir.<br><br>
 <strong>Physical Layer(Fiziksel Katman)</strong>:Gelen bit verilerini kablo,fiber ve wifi gibi aktarma yolları ile gönderir.<br><br>
 
-<h3>TCP/IP Katmanları</h3><br>
+<strong><h3>TCP/IP Katmanları</h3></strong><br>
  
 <img src="/resimler/bilgi toplama/ip/tcpip.JPG" alt="tcpip"><br>
 <strong>Uygulama Katmanı (Application Layer)</strong>: Farklı sunucular arasında gerçekleşen iletişimi sağlar. (HTTP,FTP,TELNET vb.)<br><br>
@@ -120,7 +120,7 @@ Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsin
 
 
 
-</strong><h4>Bing İle Bilgi Toplama</h4></strong><br>
+<strong><h4>Bing İle Bilgi Toplama</h4></strong><br><br>
 Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.<br><br>
 <img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
 <ul type="disc">
@@ -138,8 +138,7 @@ Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında 
 </ul><br>
 
 
-<strong><h3>Whois Analizi</h3></strong><br>
-<p> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.</p><br><br>
+<strong> <h3>Whois Analizi</h3> </strong><br> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.<br><br>
 
 
 Öncelikle Terminalimizi açıyoruz ve<strong> whois “site adı” </strong> yazıp enter tuşuna basıyoruz. <br><br>
@@ -156,7 +155,7 @@ Gördüğünüz gibi site sahibinin birçok bilgisi karşımıza çıktı.Bunu b
 <img src="/resimler/bilgi toplama/whois/whois4.JPG" alt="whois3"><br><br>
 
 <strong><h3>Reverse Whois</h3><br></strong>
-<p>Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.</p><br><br>
+Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.<br><br>
 
 İlk olarak sitemize giriyoruz.Siteye<a href="https://reversewhois.io">BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
 
@@ -166,7 +165,7 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
-<strong><h3>IP Aralığı Tespit Etme</h3></strong><br>
+<strong> <h3>IP Aralığı Tespit Etme</h3> </strong><br>
 İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
 
 <strong><h4>Arin.Net</h4></strong><br>
@@ -181,7 +180,7 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 Network kısmında bize sitenin hangi IP aralığında olduğunu gösteriyor.<br><br>
 <img src="/resimler/bilgi toplama/aralık/arin2.JPG" alt="arin"><br><br>
 
-<strong><h4>Ripe.Net</h4></strong><br>
+<h4><strong>Ripe.Net</strong></h4><br>
 
 İkinci sorgulama yapacağımız sitemiz ise Ripe.Net. Siteye <a href=”https://www.ripe.net/” target=”_blank”>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.<br><br>
 
