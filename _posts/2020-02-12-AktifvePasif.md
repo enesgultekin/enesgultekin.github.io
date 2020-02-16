@@ -28,7 +28,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 <p>Sanal dünyada sistemlerin birbirleri ile iletişim kurabilmelerine yarayan numerik rakamlardan oluşan adresler bulunmaktadır. Bu adresler bir takım sayı dizisinden oluşmaktadır.Bu numaralar sistemin bir nevi kimlik numaralarıdır. Kullanıcının her sistemin adresini numerik olarak akılda tutmasının zor olacağından dolayı DNS’e ihtiyaç duyulmuştur. DNS sunucusu, kullanıcının girdiği alan adını bünyesinde bulunan serverlarda bu alan adına karşılık gelen bir IP adresi olup olmadığını kontrol ederek yönlendirme yapar. Örnek olarak siz arama motoruna Google.com yazdığınızda DNS sunucuları Google.com’a karşılık gelen IP adresine sizi yönlendirir. Arama çubuğuna www.google.com yazmak ile 172.217.169.100 (Google IP Adesi) yazmak aynı şeydir. Başta söylediğimiz gibi bu numerik olan rakamları akılda tutmak, isim olarak akılda tutmaktan daha zor olduğu için DNS protokolünü kullanmak, kullanıcı açısından daha basittir.</p><br>
 
 
-<h3></strong>DNS Kayıt Tipleri</strong></h3><br>
+<h3><strong>DNS Kayıt Tipleri</strong></h3><br>
 
 <p>DNS kayıtları zone file dosya türleri kapsamına girmektedir. Domain ayarlarının yapılabilmesi için DNS sağlayıcınızının değiştirilebilir kayıtlarıdır.Bu kayıtlar aşağıda belirtilmiştir.</p><br><br>
 
@@ -69,11 +69,11 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 <strong>Fiziksel Katman (Physical Layer)</strong>:İletişim ortamının özelliklerini,haberleşme hızını  ve kodlama şemasını belirler.<br><br>
 
 
-<center><h1>Pasif Bilgi Toplama</h1></center>
+<center><h1>Pasif Bilgi Toplama</h1></center><br>
 
 
 
-<h3>Google İle Bilgi Toplama</h3><br>
+<strong><h3>Google İle Bilgi Toplama</h3></strong><br>
 
 Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre karşımıza sonuçlar çıkarmaktadır. Bunun yanında Google bizlere Dork diye tabir edilen spesifik arama yapabildiğimiz operatörler sunmuştur. Bu operatörleri kullanarak hedef site hakkında birçok bilgiye erişmek mümkündür. Aşağıda bu operatörler ve ne işe yaradıkları hakkında bilgiler veilmiştir.<br><br>
 
@@ -103,7 +103,7 @@ Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre
 <img src="/resimler/bilgi toplama/webs/intext.JPG" alt="intext"><br><br>
 
 Ayrıca işinize yarayabilecek birkaç operatör de aşağıda listelenmiştir.
-<ul type=”circle”>	
+<ul type="circle">	
 <li><strong>map:</strong>Aranılan lokasyona ait konum bilgilerini gösterir.</li>
 <li><strong>cache:</strong>Kapanmış olan sitelerin son halini görebilirsiniz.Ayrıca Google üzerinde en son belleğin ne zaman güncellendiğini görebilirsiniz.</li>
 <li><strong>link:</strong>Girdiğiniz site linki üzerindeki sayfaların tümünü listeler.</li>
@@ -116,14 +116,14 @@ Ayrıca işinize yarayabilecek birkaç operatör de aşağıda listelenmiştir.
 <li><strong>allintitle:</strong>Yazılan birden fazla kelimelerin hepsinin başlıkta var olduğu sayfaları listeler.</li>
 </ul><br>
 
-Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsiniz. Bunların yanında hazır olarak kullanıcılar tarafından yayınlanan dorkların listesi <a href=”https://www.exploit-db.com/google-hacking-database”>BU SİTEDE </a>mevcuttur.<br><br>
+Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsiniz. Bunların yanında hazır olarak kullanıcılar tarafından yayınlanan dorkların listesi <a href="https://www.exploit-db.com/google-hacking-database">BU SİTEDE </a>mevcuttur.<br><br>
 
 
 
-<h4>Bing İle Tarama</h4><br>
+</strong><h4>Bing İle Bilgi Toplama</h4></strong><br>
 Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.<br><br>
 <img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>site:</strong> Google ile aynıdır.Site: kısmına yazdığımız hedef site hakkında çıkan sonuçları bize sıralar.</li> 
  <li><strong>ext:</strong>Belirlenen dosya uzantısını içeriğinde barındıran siteleri listeler.</li>
  <li><strong>filetype:</strong> Google ile aynıdır. Dosya türüne göre sayfalar listeler.</li>
@@ -135,30 +135,30 @@ Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında 
 <li><strong>language:</strong>Sadece belirlenen dildeki sayfaları taramaya yarar..</li>
 <li><strong>ip:</strong>Belirlenen IP adresinin sayfalarını listeler.</li> 
 
-</ul>
+</ul><br>
 
 
-<h3>Whois Analizi</h3><br>
+<strong><h3>Whois Analizi</h3></strong><br>
 <p> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.</p><br><br>
 
-<hr>Örnek<hr>
+
 Öncelikle Terminalimizi açıyoruz ve<strong> whois “site adı” </strong> yazıp enter tuşuna basıyoruz. <br><br>
 
 <img src="/resimler/bilgi toplama/whois/whois1.JPG" alt="whois"><br><br>
 
 <img src="/resimler/bilgi toplama/whois/whois2.JPG" alt="whois2"><br><br>
 Gördüğünüz gibi site sahibinin birçok bilgisi karşımıza çıktı.Bunu birde whois.net sitesi üzerinden yaparak gösterelim.<br><br>
-<hr>Örnek<hr>
-Öncelikle whois.net adlı sitemize giriyoruz.Daha sonra karşımıza çıkan arama motoruna hedef domain adresini yazıyoruz.Enter tuşuna basıp bekliyoruz. <br><br>
+
+Öncelikle whois.net adlı sitemize giriyoruz.Siteye <a href="https://whois.net">BURAYA TIKLAYARAK</a>ulaşabilirsiniz.Daha sonra karşımıza çıkan arama motoruna hedef domain adresini yazıyoruz.Enter tuşuna basıp bekliyoruz. <br><br>
 
 <img src="/resimler/bilgi toplama/whois/whois3.JPG" alt="whois3"><br><br>
 
 <img src="/resimler/bilgi toplama/whois/whois4.JPG" alt="whois3"><br><br>
 
-<h3>Reverse Whois</h3><br>
+<strong><h3>Reverse Whois</h3><br></strong>
 <p>Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.</p><br><br>
 
-İlk olarak sitemize giriyoruz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
+İlk olarak sitemize giriyoruz.Siteye<a href="https://reversewhois.io">BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
@@ -166,12 +166,12 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
-<h3>IP Aralığı Tespit Etme</h3><br>
+<strong><h3>IP Aralığı Tespit Etme</h3></strong><br>
 İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
 
-<h4>Arin.Net</h4>
+<strong><h4>Arin.Net</h4></strong><br>
 
-İlk göstereceğimiz sitenin adı Arin.Net. Siteye <a href=https://www.arin.net” target=”_blank”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
+İlk göstereceğimiz sitenin adı Arin.Net. Siteye <a href="https://www.arin.net" target="_blank">BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
 
 İlk olarak sitemize giriş yaptıktan sonra pencerenin sağ üst kısmında bulunan arama kutucuğuna hedef sitenin IP adresini yazıyoruz.Enter tuşuna basıp bekliyoruz. <br><br>
 
@@ -181,7 +181,7 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 Network kısmında bize sitenin hangi IP aralığında olduğunu gösteriyor.<br><br>
 <img src="/resimler/bilgi toplama/aralık/arin2.JPG" alt="arin"><br><br>
 
-<h4>Ripe.Net</h4><br>
+<strong><h4>Ripe.Net</h4></strong><br>
 
 İkinci sorgulama yapacağımız sitemiz ise Ripe.Net. Siteye <a href=”https://www.ripe.net/” target=”_blank”>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.<br><br>
 
