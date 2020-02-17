@@ -502,4 +502,57 @@ Bu kısma hedef sitemizin adresini yazıyoruz. Dilersek sadece IP olarak da yaza
 Work Metgod kısmında ilk seçenek sadece GET ile olan istekleri listeliyor. Biz Auto Switch ile HEAD and GET ile olan istekleri listelemesini seçiyoruz.<br>
 Number Of  Threads kısmında programın çalışma yükünü ayarlıyoruz. Sisteminiz ne kadar iyiyse tarama gücünü de o kadar yükseltebilirsiniz. Daha hızlı sonuç alırsınız.<br><br>
 
+<img src="/resimler/bilgi toplama/aktif/dirbuster3.JPG" alt="dirbuster"><br><br>
+Select Scanning Type kısmında eğer kendimiz bir Wordlist ile tarama yapmak istiyorsak List based brute force diyoruz. Browse kısmından wordlistimizi seçip tamam diyoruz. Ama biz şuan Pure Brute Force yani aracın kendi içerisinde olan wordlist ile arama yapıyoruz.<br><br>
+Char Set kısmında aracın kendi bruteforce yönteminini uygularken kullanılacak karakter setini seçiyoruz. Örnek olarak A’dan Z’ye 0 - 9 arası gibi. Büyük küçük harf ayarlaması da yapılabilir. .<br><br>
+Min ve Max Length kısmında ise bu kelimelerin minimum ve maksimum uzunluğunu belirliyorsunuz. .<br><br>
+
+<img src="/resimler/bilgi toplama/aktif/dirbuster4.JPG" alt="dirbuster"><br><br>
+
+Bu kısımda ise bizim için önemli olan File Extension bölümü. Burada hedef sitenin hangi dilde yazıldığını belirtmemiz mecburidir. Daha sonra Start diyerek aramaya başlıyoruz. .<br><br>
+
+<img src="/resimler/bilgi toplama/aktif/dirbscan.JPG" alt="dirbuster"><br><br>
+Scan İnformation kısmında genel tarama durumu hakkında bilgiler gösterilmektedir. Result List kısmına tıklıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/aktif/dirbscan2.JPG" alt="dirbuster"><br><br>
+Burada bize bulunan sayfaları karışık olarak tek tek listeliyor. Results Tree Wiew kısmına tıklıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/aktif/dirbscan3.JPG" alt="dirbuster"><br><br>
+Burada ise bulunan sayfaları dizinler halinde gösteriyor. Bulunan sayfaya gitmek için sağ tıklayıp open in browser diyerek ulaşabilirsiniz.<br><br>
+
+
+<strong>Dmitry Kullanımı</strong><br><br>
+Kali Linux üzerinde kurulu olarak gelen bilgi toplama araçlarımızdan bir diğer de Dmitry scriptidir. Bu araç sayesinde alt domainler,whois sorgusu, e-mail adres sorgusu gibi bir çok işlemi yapabiliyoruz. Şimdi bu aracı nasıl kullanacağımıza geçelim. Terminal üzerinden Dmitry yazarak aracımıza ulaşabiliriz.Eğer parametre belirtmeden site adresi girip taratırsanız tüm taramaları gerçekleştirir.
+<img src="/resimler/bilgi toplama/aktif/dmitry.JPG" alt="dmitry"><br><br>
+Aracın parametreleri aşağıda açıklanmıştır.<br><br>
+<ul type="disc">
+<li><strong>-o</strong>: Tarama sonrası sonuçları kaydetmek için kullanılır.</li>
+<li><strong>-i</strong>: IP adresi üzerinden WHOIS sorgusu gerçekleştirir. </li>
+<li><strong>-w</strong>: Alanadı üstünden WHOIS sorgusu gerçekleştirir.</li>
+<li><strong>-n</strong>: Netcraft üzerinden bilgileri toplar.</li>
+<li><strong>-s</strong>:Kullanılan alt alan adlarını bulur.</li>
+<li><strong>-e</strong>:Alan adına kayıtlı e-posta adreslerini bulur..</li>
+<li><strong>-p</strong>:TCP port taraması yapar...</li>
+<li><strong>-f</strong>:Filtrelenmiş port taraması yapar.</li>
+</ul>
+
+Terminal üzerinden kendi taramamızı gerçekleştirmek için Dmitry -w(domain ile whois sorgusu)  -s(subdomain tespiti) “hedef site” yazıp taratıyoruz.
+<img src="/resimler/bilgi toplama/aktif/dmitry1.JPG" alt="dmitry"><br><br>
+
+<img src="/resimler/bilgi toplama/aktif/dmitry2.JPG" alt="dmitry"><br><br>
+
+
+Gördüğünüz gibi bize whois ve subdomain bilgilerini sundu. 
+	
+<strong>DNS Üzerinden Bilgi Toplama</strong><br><br>
+Makalemizin başında belirttiğimiz gibi DNS oldukça önemlidir. Düzgün yapılandırılmamış bir DNS sunucusu saldırganın oldukça fazla bilgi edinebilmesine olanak sağlar. DNS sorgusunu kullanacağımız siteler ve araçlar makalenin devamında gösterilmiştir.<br><br>
+
+<strong>Robtex Üzerinden DNS Sorgulaması</strong><br><br>
+DNS sorgulaması yapacağımız ilk sitemiz Robtex. Bilgi toplama evresinde oldukça işe yarayan bu siteye <a href=”https://www.robtex.com/”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.
+Sitemize erişim sağladıktan sonra arama kutucuğuna hedef site adresimizi yazıyoruz ve taratıyoruz<br><br>
+<img src="/resimler/bilgi toplama/aktif/robtex1.JPG" alt="robtex"><br><br>
+<img src="/resimler/bilgi toplama/aktif/robtex2.JPG" alt="robtex"><br><br>
+
+Taramayı bitirdikten sonra karşımıza sonuçları listeliyor. Alt kısımda bulunan yeşil kutucuklara tıklayarak (Records,Seo,Whois) detaylı bilgilere erişebilirsiniz. Bu sitenin güzel yanlarından biri iste DNS modelini GRAPH kısmında grafiksel olarak gösteriyor olması.<br><br>
+<img src="/resimler/bilgi toplama/aktif/robtex3.JPG" alt="robtex"><br><br>
+
+
 
