@@ -462,3 +462,44 @@ Terminal üzerinden sublist3r -d  “hedef site” -v (detaylı tarama) -p 80 ( 
 <img src="/resimler/bilgi toplama/subdomain/sublister2.JPG" alt="sublister"><br><br>
 
 İlk olarak bize subdomain tespitini yaptı. Daha sonra ise bu subdomain adreslerindeki açık 80 portlarını listeledi.<br><br>
+
+<center><h1>Sızma Testlerinde Aktif Bilgi Toplama</h1></center>
+
+<strong>Ping Nedir Nasıl Atılır?</strong><br><br>
+Ping hedef sunucunun aktif olup olmadığını kontrol etmek ve alan adının girilerek IP adresini öğrenmeye yarayan bir komuttur. Windows üzerinden CMD(Komut Sistemi) ile ya da Linux üzerinden terminal ile ping “hedef site adresi” yazılarak ping atılabilir. Biz örneğimizi Linux terminali üzerinden göstereceğiz.<br><br>
+
+Terminalimizi açıyoruz. Ping “hedef site adresi” yazıp enter yapıyoruz. Karşımıza parantez içinde numerik rakamlar çıkıyor. Bu rakamlar girdiğimiz alan adına karşılık gelen IP adresi oluyor.<br><br>
+<img src="/resimler/bilgi toplama/aktif/ping.JPG" alt="ping"><br><br>
+
+
+
+<strong>Dirb Kullanımı</strong><br><br>
+Dirb sitenin arka planında bulunan ve kullanıcıya görünmeyen kısımları, belirlenen kelime gruplarına göre tarama yapan bir araçtır.Default olarak kendi wordlistinin içinde 4612 kelime vardır. İsterseniz kendinizin oluşturduğunuz bir wordlist ile de web içeriklerini ve linklerini taratabilirsiniz.Kali Linux üzerinde kurulu olarak gelen aracın kullanımı aşağıda gösterilmiştir.<br><br>
+
+Öncelikle panelimizi açıyoruz. Daha sonra dirb “http://hedefsite ip/domain “ yazıp enter yapıp bekliyoruz.<br><br>
+
+
+<img src="/resimler/bilgi toplama/aktif/dirb1.JPG" alt="dirb"><br><br>
+<img src="/resimler/bilgi toplama/aktif/dirb2.JPG" alt="dirb"><br><br>
+<img src="/resimler/bilgi toplama/aktif/dirb3.JPG" alt="dirb"><br><br>
+
+
++ http kısmında wordlist içerisindeki kelimelere göre bulduğu bağlantı linklerini bize sıralıyor. Tek tek tıklayarak hangi bağlantılar olduğunu kontrol edebilirsiniz.<br><br>
+
+
+<strong>Dirbuster Kullanımı</strong><br><br>
+
+Web sitelerinin kullanıcı tarafından erişilmesine gizlenen(Admin Panelleri vb.) sayfalarını bulmanın bir diğer yolu da Dirbuster kullanmaktır. Kali Linux içerisinde ön tanımlı olarak gelir. Terminal üzerinde dirbuster yazarak ya da uygulamalar kısmından Dirbuster yazarak araca ulaşabilirsiniz. Görsel arayüzü olan bir araçtır. Kullanımı aşağıda gösterilmiştir.<br><br>
+
+
+<img src="/resimler/bilgi toplama/aktif/dirbuster.JPG" alt="dirbuster"><br><br>
+Aracımızı açtığımızda böyle bir arayüz ile karşımıza çıkıyor. Target kısmını tarayacağımız sayfa için ben doldurdum. Açıklamalarını aşağıya bırakıyorum.<br><br>
+<img src="/resimler/bilgi toplama/aktif/dirbuster1.JPG" alt="dirbuster"><br><br>
+Bu kısma hedef sitemizin adresini yazıyoruz. Dilersek sadece IP olarak da yazabiliriz. Sadece IP adresinin başına “http://” veya “https://” eklemeniz yeterli olacaktır.<br><br>
+
+<img src="/resimler/bilgi toplama/aktif/dirbuster2.JPG" alt="dirbuster"><br><br>
+
+Work Metgod kısmında ilk seçenek sadece GET ile olan istekleri listeliyor. Biz Auto Switch ile HEAD and GET ile olan istekleri listelemesini seçiyoruz.<br>
+Number Of  Threads kısmında programın çalışma yükünü ayarlıyoruz. Sisteminiz ne kadar iyiyse tarama gücünü de o kadar yükseltebilirsiniz. Daha hızlı sonuç alırsınız.<br><br>
+
+
