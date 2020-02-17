@@ -168,7 +168,7 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 <strong>IP Aralığı Tespit Etme</strong><br>
 İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
 
-<strong>Arin.Net</strong><br>
+<strong>Arin.net</strong><br><br>
 
 İlk göstereceğimiz sitenin adı Arin.Net. Siteye <a href="https://www.arin.net" target="_blank">BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
 
