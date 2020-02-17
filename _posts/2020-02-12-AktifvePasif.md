@@ -60,7 +60,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 <strong>Data Link Layer(Veri İletim Katmanı)</strong>:Ağ katmanından alınan verileri hatalarından arındırılmış olarak çerçeveler(frame) halinde fiziksel katmana gönderir.<br><br>
 <strong>Physical Layer(Fiziksel Katman)</strong>:Gelen bit verilerini kablo,fiber ve wifi gibi aktarma yolları ile gönderir.<br><br>
 
-<strong><h3>TCP/IP Katmanları</h3></strong><br>
+<strong>TCP/IP Katmanları</strong><br>
  
 <img src="/resimler/bilgi toplama/ip/tcpip.JPG" alt="tcpip"><br>
 <strong>Uygulama Katmanı (Application Layer)</strong>: Farklı sunucular arasında gerçekleşen iletişimi sağlar. (HTTP,FTP,TELNET vb.)<br><br>
@@ -73,7 +73,7 @@ Gündelik hayatımızda yapmak istediğimiz eyleme göre, sonuca ulaşmak için 
 
 
 
-<strong><h3>Google İle Bilgi Toplama</h3></strong><br>
+<strong>Google İle Bilgi Toplama</strong><br>
 
 Google üzerinden yaptığımız aramalarda bizlere girdiğimiz kelimelere göre karşımıza sonuçlar çıkarmaktadır. Bunun yanında Google bizlere Dork diye tabir edilen spesifik arama yapabildiğimiz operatörler sunmuştur. Bu operatörleri kullanarak hedef site hakkında birçok bilgiye erişmek mümkündür. Aşağıda bu operatörler ve ne işe yaradıkları hakkında bilgiler veilmiştir.<br><br>
 
@@ -120,7 +120,7 @@ Bu operatörler ile kendiniz site açıklarını bulan dorklar oluşturabilirsin
 
 
 
-<strong><h4>Bing İle Bilgi Toplama</h4></strong><br><br>
+<strong>Bing İle Bilgi Toplama</strong><br><br>
 Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında bilgi edinmek mümkündür.Parametreleri Google ile hemen hemen aynı olsa da ufak farklar mevcuttur. Parametreler aşağıda listelenmiştir.<br><br>
 <img src="/resimler/bilgi toplama/webs/bing.JPG" alt="bing"><br><br>
 <ul type="disc">
@@ -138,7 +138,7 @@ Pasif bilgi toplama sürecinde Google yanında Bing ile de hedef site hakkında 
 </ul><br>
 
 
-<strong> <h3>Whois Analizi</h3> </strong><br> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.<br><br>
+<strong>Whois Analizi </strong><br><br> Whois sorgusu, hedef site hakkında bize birçok bilgi sunar. Site sahibinin iletişim bilgileri,adres bilgileri, işletme bilgileri,e-posta bilgileri vb. birçok şeyi whois sorgusu ile öğrenebiliriz. İnternet üzerinden whois analizi yapabilecek bir çok web site mevcuttur.Bunun yanında Linux ile terminal üzerinden kolaylıkla whois sorgusu yapılabilir. İlk örneğimizi Linux üzerinden gösterelim.<br><br>
 
 
 Öncelikle Terminalimizi açıyoruz ve<strong> whois “site adı” </strong> yazıp enter tuşuna basıyoruz. <br><br>
@@ -154,7 +154,7 @@ Gördüğünüz gibi site sahibinin birçok bilgisi karşımıza çıktı.Bunu b
 
 <img src="/resimler/bilgi toplama/whois/whois4.JPG" alt="whois3"><br><br>
 
-<strong><h3>Reverse Whois</h3><br></strong>
+<strong>Reverse Whois<br></strong>
 Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.<br><br>
 
 İlk olarak sitemize giriyoruz.Siteye<a href="https://reversewhois.io">BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
@@ -165,10 +165,10 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
-<strong> <h3>IP Aralığı Tespit Etme</h3> </strong><br>
+<strong>IP Aralığı Tespit Etme</strong><br>
 İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
 
-<strong><h4>Arin.Net</h4></strong><br>
+<strong>Arin.Net</strong><br>
 
 İlk göstereceğimiz sitenin adı Arin.Net. Siteye <a href="https://www.arin.net" target="_blank">BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
 
@@ -182,7 +182,7 @@ Network kısmında bize sitenin hangi IP aralığında olduğunu gösteriyor.<br
 
 <h4><strong>Ripe.Net</strong></h4><br>
 
-İkinci sorgulama yapacağımız sitemiz ise Ripe.Net. Siteye <a href=”https://www.ripe.net/” target=”_blank”>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.<br><br>
+İkinci sorgulama yapacağımız sitemiz ise Ripe.Net. Siteye <a href="https://www.ripe.net/" target="_blank">BURAYA TIKLAYARAK</a>ulaşabilirsiniz.<br><br>
 
 Sitemize girdiğimizde karşımıza gelen pencerede, sağ üst köşede bulunan arama kutucuğuna hedef IP adresimizi giriyoruz ve enter tuşuna basıp bekliyoruz.<br><br>
 
@@ -193,7 +193,7 @@ Inetnum kısmında sitenin hangi IP aralığında olduğunu biz gösteriyor.<br>
 
 <img src="/resimler/bilgi toplama/aralık/ripe2.JPG" alt="ripe"><br><br>
 
-<h4>Apnic.Net</h4><br>
+<strong>Apnic.net</strong><br><br>
 
 Üçüncü sorgulama yapacağımız site ise Apnic.Net.Siteye <a href=”https://www.apnic.net/” target=”_blank”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
 
@@ -206,7 +206,7 @@ Inetnum kısmında bize IP aralığını gösteriyor.<br><br>
 <center><h1>Archive.Org Nedir?</h1></center><br>
 1996 yılında kurulmuş olan bu site kullanıcılara internet üzerinde kaydettiği dökümanları sunmaktadır.Bu dökümanlar içerisinde resim,video,müzik,kitap,yazılım gibi bir çok seçenek sunmaktadır.Bizim ilgili olduğumuz alan ise bu sitenin aynı zamanda web sitelerinin belirli aralıklarla görüntüsünü kaydetmesidir. Bu yol bize kapanmış bir sitenin, kapanmadan önceki görüntülerine erişme imkânı sağlamaktadır.<br><br>
 
-İlk olarak sitemize giriyoruz.<a href=https://archive.org>Buraya Tıklayarak Ulaşabilirsiniz.</a>Sol üst köşeden sarı renkle gösterilmiş olan WEB kısmına tıklıyoruz. Karşımıza WaybackMachine adında bir tarama kutucuğu çıkıyor. <br><br>
+İlk olarak sitemize giriyoruz.<a href="https://archive.org">Buraya Tıklayarak</a> ulaşabilirsiniz.Sol üst köşeden sarı renkle gösterilmiş olan WEB kısmına tıklıyoruz. Karşımıza WaybackMachine adında bir tarama kutucuğu çıkıyor. <br><br>
 
 <img src="/resimler/bilgi toplama/archive/archive1.JPG" alt="archive1"><br><br>
 Bu arama kutucuğuna hedef sitemizin adresini giriyoruz ve enter tuşuna basıyoruz.<br><br>
@@ -214,14 +214,14 @@ Bu arama kutucuğuna hedef sitemizin adresini giriyoruz ve enter tuşuna basıyo
 Karşımıza yılların sıralandığı çubuk şeklinde bir tarih sırası ve altında ise  ay ve günlerin olduğu bir tarih paneli çıkıyor. Yılların belirtildiği çubuğun olduğu kısımda ise hangi yıllar ne kadar görüntü almışsa onu ifade eden bir histogram grafiği mevcut. Altında ise ayların içinde mavi ile işaretlenmiş günler mevcut. Bu mavi işaretle gösterilmiş olan günler bize o gün görüntü kaydının alındığını ifade etmektedir.Biz 2005 yılını seçtik ve 23 Şubat tarihli görüntü kaydına tıkladık.<br><br>
 <img src="/resimler/bilgi toplama/archive/archive3.JPG" alt="archive3"><br><br>
 Gördüğünüz gibi seçtiğimiz tarihdeki sitenin görüntüsünü bizlere sundu.<br><br>
-h5>YouGetSignal İle Bilgi Toplama</h5>
+<strong>YouGetSignal İle Bilgi Toplama</strong><br><br>
 	
 Pasif bilgi toplama sürecinde bize yardımcı olan sitelerden bir diğeri de YouGetSignal adlı web sitesidir.Siteye <a href=https://www.yougetsignal.com> BURAYA TIKLAYARAK</a> ulaşabilirsiniz.
 <br>
 İlk olarak sitemize giriş yapıyoruz. Karşımıza tools kısımlı bir pencere çıkıyor. Burada site içerisinde yapabileceğimiz taramalar mevcuttur. Her birinin açıklaması aşağıda verilmiştir.
 <img src="/resimler/bilgi toplama/webs/yougetsignal.JPG" alt="yougetsignal"><br><br>
 
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>Port Forwarding Tester</strong>:Hedef sitenin belirtilen portunun açık olup olmadığını bulur.</li> 
 <li><strong>What Is My Ip Adress?</strong>:Bağlantı sağladığınız bilgisayarın IP adresini gösterir.</li>
 <li><strong>Network Location Tool</strong>:Hedef adresin hangi konumda olduğunu harita üzerinde gösterir. </li>
@@ -231,7 +231,7 @@ Pasif bilgi toplama sürecinde bize yardımcı olan sitelerden bir diğeri de Yo
 <li><strong>Whois Lookup Tool</strong>:Whois sorgulaması yapmaya yarar.</li>
 </ul>
 
-<h5>Netcraft İle Bilgi Toplama</h5><br>
+<strong>Netcraft İle Bilgi Toplama</strong><br><br>
 
 Sıkça kullanılan sitelerden bir diğeri de Netcraft. Benim de oldukça hoşuma giden bu web sitesi sayesinde hedef sistemin DNS bilgileri,İşletim Sistemleri ve IP bilgileri gibi daha bir çok bilgiye erişmek mümkün. Biz Netcraft sitesinin Site Report kısmını kullanıyoruz.<a href=https://sitereport.netcraft.com/>BURAYA TIKLAYARAK</a> siteye ulaşabilirsiniz.
 Sitemize girdikten sonra karşımıza çıkan arama bölümüne hedef site adını yazıyoruz. <br><br>
@@ -240,9 +240,9 @@ Sitemize girdikten sonra karşımıza çıkan arama bölümüne hedef site adın
 <img src="/resimler/bilgi toplama/webs/netcraft2.JPG" alt="netcraft2"><br><br>
 <img src="/resimler/bilgi toplama/webs/netcraft3.JPG" alt="netcraft3"><br><br>
 
-<h5>Shodan İle Bilgi Toplama</h5><br>
+<strong>Shodan İle Bilgi Toplama</strong><br>
 Shodan diğer arama motorlarından farklı olarak web sitelerinden ziyade bizlere internete açık olan sunucular hakkında bilgi vermektedirOyun Sunucuları,Veritabanları,Kameralar ve giriş panelleri açık olan bir çok sunucuyu bizlere göstermektedir. Shodan kullanımı aşağıda gösterilmiştir.<br>
-Siteye <a href=https://shodan.io>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.
+Siteye <a href="https://shodan.io">BURAYA TIKLAYARAK</a>ulaşabilirsiniz.
 Öncelikle sitemize giriyoruz.
 
 <img src="/resimler/bilgi toplama/webs/shodan.JPG" alt="shodan"><br><br>
@@ -251,7 +251,7 @@ Siteye <a href=https://shodan.io>BURAYA TIKLAYARAK</a>ulaşabilirsiniz.
 Spesifik olarak arama gerçekleştirmeden önce site içerisinde bulunan hazır araçları göstermek istiyorum. Bunun için arama kutucuğunun altında bulunan Explore kısmına tıklıyoruz.
 
 
-<img src="/resimler/bilgi toplama/webs/shodanexplore.JPG" alt="shodan"><br><br>
+<img src="/resimler/bilgi toplama/webs/shodanexplore.jpg" alt="shodan"><br><br>
 Daha sonra karşımıza gelen ekranda farklı araçların olduğunu görüyorsunuz. Databases,Video Games, Industrial Control Systems,Webcam, Netcam, Cams gibi.
 
 <img src="/resimler/bilgi toplama/webs/shodanexplore1.JPG" alt="shodan"><br><br>
@@ -287,17 +287,17 @@ Sunucu hakkındaki port,servis ve en önemlisi Vulnerabilities yani sunucu açı
 
 Shodan ile tıpkı Google,Bing vb. arama motorlarında olduğu gibi spesifik olarak tarama yapmak da mümkündür. Bu parametreleri kendi seçiminize göre belirleyip daha detaylı aramalar gerçekleştirebilirsiniz.Şimdi bu parametrelerin bir kısmını açıklamalarıyla birlikte veriyoruz.
 
-<ul type=”disc”>
+<ul type="disc">
 <li><strong> country</strong>: Belirli bir ülke içindeki sunucuları aramak için kullanılır. </li>
 <li><strong>hostname </strong>:Sonuçları belirlediğiniz alan adına göre filtreler.</li>
 <li><strong>net </strong>: Sonuçları belirlediğiniz IP adresine göre filtreler.</li>
 <li><strong>os </strong>: Belirlediğiniz işletim sistemini içeren sonuçları filtreler.</li>
 <li><strong> port</strong>: Belirlediğiniz port sayısının içerdiği sunucuları filtreler.</li>
 <li><strong> city</strong>: Belirlediğiniz şehre göre sonuçları listeler.</li>
-</ul>
+</ul><br>
 
-<h4>BinaryEdge Üzerinden Bilgi Toplama</h4><br>
-Diğer sitelerdan farklı olarak üyelik oluşturmamız gereken bir sitedir. Üyelik oluşturmak için <a href=”https://app.binaryedge.io/sign-up”>BURAYA TIKLAYIN</a>. Üyeliğimizi oluşturup aktif ettikten sonra karşımıza arama paneli çıkacaktır.
+<strong>BinaryEdge Üzerinden Bilgi Toplama</strong><br><br>
+Diğer sitelerdan farklı olarak üyelik oluşturmamız gereken bir sitedir. Üyelik oluşturmak için <a href="https://app.binaryedge.io/sign-up">BURAYA TIKLAYIN</a>. Üyeliğimizi oluşturup aktif ettikten sonra karşımıza arama paneli çıkacaktır.
 
 
 <img src="/resimler/bilgi toplama/webs/binary.JPG" alt="binary"><br><br>
@@ -315,13 +315,13 @@ Ayrıca BinaryEdge üzerinden subdomain taraması da yapılabilmektedir. Sitenin
 
 
 
-<h4>TheHarvester İle Domain Üzerinde E-Mail Keşfi</h4><br>
+<strong>TheHarvester İle Domain Üzerinde E-Mail Keşfi</strong><br><br>
 
 Pasif Bilgi Toplama sürecinde kullanılan araçlardan biri de TheHarvester scriptidir. Kali Linux işletim sistemi üzerinde öntanımlı olarak gelen bu aracın komutları aşağıda gösterilmiştir.<br><br>
 
 <img src="/resimler/bilgi toplama/subdomain/harves1.JPG" alt="harves"><br><br>
 
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>-d</strong>:Hedef site adresinin belirtilmesinde kullanılır.</li>
 <li><strong>-b</strong>:Belirtilen arama motoru üzerinden taramaları gerçekleştirir.Google,Yahoo vb.All yazarak tamamında arama gerçekleştirebilirsiniz.</li>
 <li><strong>-g</strong>:Google dork kullanarak aramaları gerçekleştirir.</li>
@@ -342,25 +342,25 @@ Pasif Bilgi Toplama sürecinde kullanılan araçlardan biri de TheHarvester scri
 <img src="/resimler/bilgi toplama/subdomain/harves2.JPG" alt="harves"><br><br>
 <img src="/resimler/bilgi toplama/subdomain/harves3.JPG" alt="harves"><br><br>
 
-Gördüğünüz gibi karşımıza, alan adlarına kayıtlı olan e-mail adreslerini listeliyor. 
+Gördüğünüz gibi karşımıza, alan adlarına kayıtlı olan e-mail adreslerini listeliyor. <br><br>
 
-<h3>Subdomain Tespiti Nedir Nasıl yapılır?</h3>
+<strong>Subdomain Tespiti Nedir Nasıl yapılır?</strong><br><br>
 Subdomain sitelerin alt alan adları anlamına gelmektedir. Ana domaine bağlı olan subdomainler hosting satın alınan site tarafından sınırlı ya da sınırsız sayıda size sunulan alt alan adlarıdır. Subdomain taramaları scriptler üzerinden ya da web siteleri üzerinden yapılabilir.Makalenin devamında nasıl yapıldığına dair bilgiler mevcuttur.
 
-<h4>Aquatone İle Subdomain Taraması</h4>
+<strong>Aquatone İle Subdomain Taraması</strong><br><br>
 Aquatone ;Aquatone-discover, Aquatone-scan, Aquatone-gather olmak üzere içinde üç farklı araç barındıran bir scripttir. Her bir araç için farklı bir yükleme yapmaya gerek yoktur.Aquatone kurduğumuzda bu üç araç da birlikte geliyor.
 Öncelikle terminalimizi açıyoruz. Daha sonra “ sudo gem install aquatone “ yazıp uygulamamızı indiriyoruz. <br><br>
 <hr>Yükleme<hr>
  <img src="/resimler/bilgi toplama/subdomain/aquatone.JPG" alt="aquatone"><br><br>
  
- <h5>Aquatone-Discover<h5><br>
+ <strong>Aquatone-Discover</strong><br><br>
 Aquatone kullanımında ilk olarak discover ile subdomain adreslerini bulmanız zorunludur. Daha sonra scan ve gather araçlarını kullanabilirsiniz.
 Aquatone-discover komutları aşağıda gösterilmiştir.<br><br>
 <hr>Komutlar<hr>
 
   <img src="/resimler/bilgi toplama/subdomain/aquatone-discover1.JPG" alt="aquatone"><br><br>
 
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>-(-d) –domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
 <li><strong>--nameservers</strong>: Taramada özel olarak kullanmak istediğimiz NS(Name Server) belirler.</li>
 <li><strong--fallback-nameservers</strong>:Yedek DNS sunucusu belirlemek için kullanılır.</li>
@@ -380,7 +380,7 @@ Aquatone-discover komutları aşağıda gösterilmiştir.<br><br>
 <li></strong>wayback-machine-timeout</strong>:Wayback Machine için saniye cinsinden zaman aşımını belirtmeye yarar.</li>
 <li></strong>--gtr-pages</strong>:İşlenecek Google Şeffaflık Raporu sayfa sayısını belirtmeye yarar.</li>
 <li><strong>--help</strong>:Kullanılabilecek parametreleri listeler.</li>
-</ul><br>
+</ul><br><br>
 
 İlk olarak alt domain keşfi yapmak için aquatone-discover kullanıyoruz. –d parametresi ile hedef siteyi belirtiyoruz ve taramayı gerçekleştiriyoruz.<br>
 <hr>Örnek Tarama<hr>
@@ -388,13 +388,13 @@ Aquatone-discover komutları aşağıda gösterilmiştir.<br><br>
     <img src="/resimler/bilgi toplama/subdomain/aquatone-discover3.JPG" alt="aquatone"><br><br>
   Gördüğünüz gibi sitenin subdomain adreslerini bize listeledi. Bunları /root/aquatone/unime.it adlı dosyanın içine txt ve json dosyası olarak kayıt etti.Artık Aquatone-scan ile port taraması yapabiliriz. <br><br>
   
-  <h5>Aquatone-Scan</h5><br>
+  <strong>Aquatone-Scan</strong><br><br>
 
 Aquatone-discover ile subdomainleri keşfettikten sonra scan taraması ile portları tarayabilirsiniz.
 
 Aquatone-scan komutları aşağıda gösterilmiştir.<br><br>
 <img src="/resimler/bilgi toplama/subdomain/aquatone-scan.JPG" alt="aquatone"><br><br>
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>(-d) --domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
 <li><strong>(-p) --ports</strong>: Belirlediğiniz portları taramak için kullanılır.</li>
 <li><strong>--timeout</strong>:Portları tararken zaman aşımını belirmek için kullanılır.</li>
@@ -402,15 +402,15 @@ Aquatone-scan komutları aşağıda gösterilmiştir.<br><br>
 <li><strong>(s) --sleep</strong>: Taramayı belirli saniyeler arasında gerçekleştirir.</li>
 <li><strong>(-j) –jitter</strong>: .Sleep değerini belli bir yüzdeliğe bölerek farklı zaman aralıklarında arama yapmasını sağlar.</li>
 <li>(-h) --help</strong>:Kullanılabilir komut listesini açar.</li>
-</ul><br>
+</ul><br><br>
 
-<h5>Aquatone-Gather</h5><br>
+<strong>Aquatone-Gather</strong><br><br>
 
-Port taraması yaptıktan sonra en son aşamaya geçilir. Gather ile web sitelerinin görselleri,HTTP  üst bilgilerini almak mümkündür. Aşağıda komutlar hakkında bilgi verilmiştir.<br><br
+Port taraması yaptıktan sonra en son aşamaya geçilir. Gather ile web sitelerinin görselleri,HTTP  üst bilgilerini almak mümkündür. Aşağıda komutlar hakkında bilgi verilmiştir.<br><br>
 
 <img src="/resimler/bilgi toplama/subdomain/aquatone-gather.JPG" alt="aquatone"><br><br>
 
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>(-d) --domain</strong>: Hedef siteyi belirtmek için kullanılır.</li>
 <li><strong>--timeout</strong>:İşlemleri yaparken zaman aşımını belirmek için kullanılır.</li>
 <li><strong>(t) --threads</strong>: Discover da olduğu gibi; Varsayılan tarama gücünü değiştirmek için kullanılır.</li>
@@ -419,7 +419,7 @@ Port taraması yaptıktan sonra en son aşamaya geçilir. Gather ile web siteler
 <li>(-h) --help</strong>:Kullanılabilir komut listesini açar.</li>
 </ul><br>
 
-<h3>Dnsmap İle Subdomain Taraması</h3><br>
+<strong>Dnsmap İle Subdomain Taraması</strong><br><br>
 
 DNS üzerinden subdomain tespiti yapan bir başka aracımız da dnsmap. Kullanımı basit ve sade bir araçtır. Parametreleri ve açıklamaları aşağıda verilmiştir.<br><br>
 
@@ -439,13 +439,13 @@ Terminalimizi açıyoruz ve dnsmap "hedef site ip" yazıyoruz. Enter tuşuna bas
 	
 Gördüğünüz gibi hedef sitenin bulunan alt alan adlarını bizlere gösterdi.
 	
-<h3>Sublist3r İle Subdomain Taraması</h3><br>
+<strong>Sublist3r İle Subdomain Taraması</strong><br><br>
 
 Subdomain taramasında sıkça kullanılan araçlardan birisi de sublist3r scriptidir. Kullanımı ve komutları aşağıda belirtilmiştir.<br><br>
 
 
 <img src="/resimler/bilgi toplama/subdomain/sublister.JPG" alt="sublister"><br><br>
-<ul type=”disc”>
+<ul type="disc">
 <li><strong>-h</strong>:Kullanılabilir komut listesini açar.</li>
 <li><strong>-d</strong>: Hedef site adresini belirtmek için kullanılır.</li>
 <li><strong>-b</strong>:BruteForce yöntemi ile tarama gerçekleştirir.</li>
@@ -456,7 +456,6 @@ Subdomain taramasında sıkça kullanılan araçlardan birisi de sublist3r scrip
 <li><strong>-o</strong>:Sonuçların kayıt edileceği text dosyasını belirlemek için kullanılır.</li>
 </ul> <br><br>
 
-Örnek Tarama<br><br>
 Terminal üzerinden sublist3r -d  “hedef site” -v (detaylı tarama) -p 80 ( açık 80 portlarını bul) olarak örneğimizi yapıyoruz.
 
 <img src="/resimler/bilgi toplama/subdomain/sublister1.JPG" alt="sublister"><br><br>
