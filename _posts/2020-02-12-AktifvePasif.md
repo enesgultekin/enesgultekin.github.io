@@ -552,7 +552,107 @@ Sitemize erişim sağladıktan sonra arama kutucuğuna hedef site adresimizi yaz
 <img src="/resimler/bilgi toplama/aktif/robtex2.JPG" alt="robtex"><br><br>
 
 Taramayı bitirdikten sonra karşımıza sonuçları listeliyor. Alt kısımda bulunan yeşil kutucuklara tıklayarak (Records,Seo,Whois) detaylı bilgilere erişebilirsiniz. Bu sitenin güzel yanlarından biri iste DNS modelini GRAPH kısmında grafiksel olarak gösteriyor olması.<br><br>
-<img src="/resimler/bilgi toplama/aktif/robtex3.JPG" alt="robtex"><br><br>
+<strong>Mxtoolbox Üzerinden DNS Sorgulaması</strong><br><br>
+
+DNS üzerinden sorgulama yapacağımız bir diğer sitemiz ise Mxtoolbox adlı web sitesi. Siteye <a href=” https://mxtoolbox.com/> BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br<br>
+Öncelikle sitemize giriş yaptıktan sonra arama kutucuğuna hedef site adresimizi giriyoruz ve MX Lookup kutucuğuna tıklıyoruz..<br><br>
+
+ 
+<img src="/resimler/bilgi toplama/aktif/mx.JPG" alt="mx"><br><br>
+
+Hedef adresi analiz ettikten sonra bizlere hangi bilgilere ulaşabileceğimizi MX Lookup sekmesinde gösteriyor.Whois sorgusu,DNS kayıtları, Ters DNS sorgusu, Domain durumu gibi bir çok bilgiye erişmek mümkün.<br><br>
+
+<img src="/resimler/bilgi toplama/aktif/mx2.JPG" alt="mx"><br><br>
+
+Örnek olarak biz veri paketlerinin hangi aşamalardan gittiğini görmek için Trace kısmını seçtik. Daha sonra kutucuğumuzun içinde TRACE yazısı belirdi. Bu kutucuğa tıkladığımızda bize istediğimiz bilgileri verdi.<br><br>
+
+<img src="/resimler/bilgi toplama/aktif/mx3.JPG" alt="mx"><br><br>
+
+<strong>DNSstuff Üzerinden DNS Sorgulama</strong><br><br>
+
+Şimdiki web sitemizin adı ise DNSstuff. Siteye <a href=” https://tools.dnsstuff.com/”> BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Sitenin içerisinde DNS kayıt bilgileri,Whois sorgusu, IP sorgusu gibi farklı özellikler mevcut. <br><br>
+
+<img src="/resimler/bilgi toplama/aktif/stuff.JPG" alt="mx"><br><br>
+
+Biz örnek olarak DNSreport aracını kullandık. Hedef adresimizi arama kutucuğuna girdikten sonra taratmasını yaptırdık. Araç DNS sorgulamalarını yaptıktan sonra bizlere sonuçları raporladı. Burada Pass olan kısımlar herhangi bir sorunun olmadığını, Warn ile gösterilen kısımlar ise olası istismar kaynaklarını belirtiyor.<br><br>
+<img src="/resimler/bilgi toplama/aktif/stuff1.JPG" alt="mx"><br><br>
 
 
+<strong>Dnsdumpster ile DNS Taraması</strong><br><br>
+Site üzerinden DNS sorgulaması yapacağımız son sitemiz Dnsdumpster.Siteye <a href=”https://dnsdumpster.com/”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Siteye girdikten sonra arama kutucuğuna hedef site adresimizi yazıyoruz ve search kutucuğuna basarak taratıyoruz.<br><br>
+
+ <img src="/resimler/bilgi toplama/aktif/dumpster.JPG" alt="mx"><br><br>
+
+
+Tarama yaptıktan sonra karşımıza DNS kayıtlarını sıralıyor. Konum bilgisi,A kayıtları, MX kayıtları, TXT kayıtları ve DNS trafiğini haritalar üzerinde gösterdi.<br><br>
+
+ <img src="/resimler/bilgi toplama/aktif/dumpster1.JPG" alt="mx"><br><br>
+ 
+ <strong>DIG İle DNS Taraması</strong><br><br>
+Linux üzerinde kurulu olarak gelen Dig ile DNS taraması yapmayı ele alacağız. Terminal üzerinden dig yazarak araca ulaşabilirsiniz. Kullanımı ve komutları aşağıda gösterilmiştir.<br><br>
+
+ <img src="/resimler/bilgi toplama/aktif/dig.JPG" alt="dig"><br><br>
+
+<ul type="disc">
+<li><strong>-4 </strong>:Taramayı yalnızca IPv4 kullanarak yapar. </li>
+<li><strong>-6</strong>: Taramayı IPv6 kullanarak yapar.</li>
+<li><strong>-b </strong>:Taramanın kaynak IP adresini ayarlar. Dilerseniz port belirtebilirsiniz. </li>
+<li><strong>-c </strong>:Sorgu sınıfını ayarlar. </li>
+<li><strong>-f</strong>:Belirlediğiniz dosya üzerinden tarama gerçekleştirir. </li>
+<li><strong>-i</strong>: Ters IPv6 sorgusu yapar.</li>
+<li><strong>-k </strong>:Belirlenen dosya içerisindeki anahtarı kullanarak tarama gerçekleştirir. </li>
+<li><strong>-m </strong>:Hata ayıklama modunu etkinleştirir. </li>
+<li><strong>-p </strong>:Taramayı belirtilen porta göre yapar. </li>
+<li><strong>-q </strong>: Taranacak olan alan adını belirtmeye yarar.</li>
+<li><strong>-t </strong>:Sorgulanacak kayıt türünü belirtmeye yarar.</li>
+<li><strong>-v </strong>: Aracın sürüm numarasını gösterir.</li>
+<li><strong>-x </strong>: Ters DNS sorgulaması yapar.</li>
+<li><strong>-y</strong>: Seçilen anahtar ile TSIG kullanarak sorgulama yapar.</li>
+</ul><br>
+
+
+Dig scripti ile DNS sorgulamasını yapalım. Terminalimize dig “hedef site adresi” yazıp enter tuşuna basarak taratıyoruz. Burada -q kullanarak hedef site belirtmenize gerek yoktur. Birden fazla parametre kullanımı olacaksa -q kullanılması karışıklık olmaması açısından tavsiye edilir.<br><br>
+
+ <img src="/resimler/bilgi toplama/aktif/dig.JPG" alt="dig"><br><br>
+ 
+Gördüğünüz gibi DNS kayıtlarını bizlere listeledi.<br><br>
+
+<strong>NSLookup İle DNS Sorgulama</strong><br<br>
+
+
+Hem Windows hem de Linux üzerinde kurulu olan bu araç ile DNS sorgulaması yapmak mümkündür. Kullanımı oldukça basittir. Terminal üzerinde nslookup -type=”sorgulama biçimi” “hedef site adresi” yazarak sorgulama yapabilirsiniz. Burada -type= kısmına sorgulamak istediğiniz DNS kaydını belirtebilirsiniz. Örneğin Nameserver kaydı sorgulamak için -type=ns yazmanız yeterlidir. Biz tüm DNS kayıtlarını sorgulamak istiyoruz. Bu yüzden any(tüm kayıtları sorgula) yazıyoruz.<br><br>
+ <img src="/resimler/bilgi toplama/aktif/ns.JPG" alt="dig"><br><br>
+
+Hedef sitenin DNS kayıtlarını bizlere sundu. Dilerseniz kendi belirlediğiniz DNS serveri üzerinden de sorgulama yapabilirsiniz. Bunun için komutların sonuna istediğimiz DNS sunucusundan sorgulanması için DNS adresi ekliyoruz. Örnek olarak biz Google DNS kullanarak sorgulayacağız.<br<br> 
+<img src="/resimler/bilgi toplama/aktif/ns2.JPG" alt="dig"><br><br>
+Server kısmında hangi DNS serveri üzerinden sorguladığımızı bize gösteriyor.<br><br>
+
+<strong>Dnsenum ile DNS Sorgulama</strong><br><br>
+
+Sıradaki DNS sorgusu için kullanacağımız aracımız dnsenum. Aracı yüklemek için terminal üzerinden apt-get install dnsenum yazıp enter tuşuna basıp yükleme işlemini gerçekleştirebilirsiniz. Aracımızın parametreleri ve açıklamaları aşağıda gösterilmiştir.<br><br>
+<img src="/resimler/bilgi toplama/aktif/enum.JPG" alt="dnsenum"><br><br>
+
+<ul type=”disc”>
+<li><strong>--dnsserver </strong>:Belirlediğiniz DNS server üzerinden sorgulama gerçekleştirir. </li>
+<li><strong> --enum</strong>:--threads, -s 15 -w komutlarını birlikte kullanır.</li>
+<li><strong>-h</strong>: Yardım menüsünü açar.</li>
+<li><strong>--noreverse</strong>: Ters sorgulamayı geçer.</li>
+<li><strong>--private</strong>:Özel ips’leri kaydeder. </li>
+<li><strong>--subfile</strong>:Belirlenen dosyaya tarama sonuçlarındaki alt alan adlarını kaydeder. </li>
+<li><strong>-t</strong>: TCP ve UDP zaman aşımını ayarlar.</li>
+<li><strong>--threads</strong>:Sorgulama yaparken kullanılacak iş parçacığı miktarını ayarlar.</li>
+<li><strong>-v</strong>: Ayrıntılı bir biçimde tarama gerçekleştirir.</li>
+<li><strong>-p </strong>: Taranacak Google sayfa sayısını belirler.</li>
+<li><strong> -s</strong>: Google üzerinden yazılacak maksimum alt alan adı sayısı belirler.</li>
+
+<li><strong> -f</strong>: Subdomainleri dışarıdan belirtilen bir dosya ile okur ve brute force gerçekleştirir.</li>
+<li><strong> -d</strong>: Whois sorgulamalarını yaparken aradaki gecikme süresini belirler.</li>
+<li><strong>-w</strong>: Whois sorgusunu C sınıfı ağ aralığıyla gerçekleştirir..</li>
+<li><strong> -o</strong>: Sonuçları xml dosyası olarak kaydetmeye yarar.</li>
+</ul>
+<br>
+
+Sorgulamamızı yapmak için terminalimizi açıyoruz ve dnsenum “hedef site adresi” yazıp enter tuşuna basıp taratmamızı gerçekleştiriyoruz.<br><br>
+<img src="/resimler/bilgi toplama/aktif/enum2.JPG" alt="dnsenum"><br><br>
+DNS kayıtlarını bizlere sunmuş oldu.<br><br>
 
