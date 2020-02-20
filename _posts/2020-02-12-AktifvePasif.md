@@ -656,3 +656,162 @@ Sorgulamamızı yapmak için terminalimizi açıyoruz ve dnsenum “hedef site a
 <img src="/resimler/bilgi toplama/aktif/enum2.JPG" alt="dnsenum"><br><br>
 DNS kayıtlarını bizlere sunmuş oldu.<br><br>
 
+<center><h1>NMAP Kullanımı</h1><br></center>
+<img src="/resimler/bilgi toplama/nmap/logo.JPG" alt="logo"><br><br>
+
+Aktif Bilgi Toplama yönteminin en çok tercih edilen aracı NMAP dersek yalan söylemiş olmayız.Bilgisayar Ağları Uzmanı Gordon Lyon tarafından C/C++ ve Python dilleri kullanılarak geliştirilmiştir. Diğer araçlara nazaran daha farklı ve daha detaylı tarama yöntemleri olan NMAP, bu aşamada en çok işimize yarayacak olan araçtır. Hedef sistemin portlarının durumu,işletim sistemleri,firewall kontrolü,versiyon bilgileri gibi bir çok keşfi yapmak mümkündür.İçinde hedef sistemin zafiyetini bildiren scriptler de bulunduran NMAP  kullanımına geçmeden önce temel mantığının nasıl olduğuna az çok yardımcı olacak olan, Three-way Handshake (Üçlü El Sıkışma) nedir onu anlatalım.<br><br>
+İnsanlar sosyal hayatta tanışırken isimlerini birbirlerine sırayla söylerler ve memnun olduklarını dile getirirler.Sistemlerin tanışması da tıpkı bunun gibidir. Sistemler de tanışırken birbirlerine bazı paketler gönderirler.Bu paketler sayesinde iki sistem arasında iletişim kurulmuş olur. Örnek olarak makalenin devamında bahsedeceğimiz klasik TCP Connect taramasında Three-way Handshake’in nasıl gerçekleştiğini gösterelim.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/threeway.JPG" alt="logo"><br><br>
+Öncelikle bizim sistemimiz tarafından iletişim kurmak istediğimiz sisteme SYN bayrakları taşıyan bir paket yollanır..Eğer karşı sistemdeki iletişim kurulan port açıksa, sistemin çalıştığını ve gelen mesajı okuduğunu gösteren SYN-ACK bayrağı içeren bir paket yollar. Gelen SYN-ACK paketine mesajı doğrulamak için sistemimiz tarafından ACK bayraklı bir veri paketi yollanır. Böylece Three-way Handshake işlemi gerçekleşmiş, sistemler birbirini tanımış ve iletişim sağlanmış olur.<br>
+
+Bu TCP bayrakların neler olduğunu açıklayalım.<br>
+<ul type=”disc”>
+<li><strong>URG</strong>:Diğer paketlerin işlenmesinden önce, gönderilen paketi işleme alması için öncelik belirten bayraktır.</li>
+<li><strong>ACK</strong>:Onay bayrağıdır.Paketlerini alındığını ve teslim edildiğini belirtir.</li>
+<li><strong>PSH</strong>: Gönderilen paketi karşı tarafın paketlemesi yerine gönderildiği gibi işleme almasını belirtir.</li>
+<li><strong>RST</strong>:Sıfırlama işlemi anlamına gelir.Bu bayrak oturumun sıfırlanmasını belirtir. </li>
+<li><strong>FIN</strong>:Daha fazla veri gönderiminin olmayacağını belirten, sistem tarafından en son gönderilen  pakette bulunan bayraktır..</li>
+<li><strong>ECE</strong>:TCP eşinin ECN yeteneği olup olmadığını sorgulayan bayraktır.</li></ul>
+<br>
+
+NMAP ile ilk taramamızı gerçekleştirmeden önce şunları bilmekte fayda olduğunu düşünüyorum. İlk olarak “nmap” komutundan sonra alanadı girerseniz NMAP otomatik olarak DNS Lookup işlemi yapar. Bu da karşı sistemde log kaydı oluşturmaya neden olabilir. Bu yüzden direk IP adresi girilerek tarama yapılması tavsiye edilir. Bir ikinci konu ise NMAP port taramalarını yaparken dikkat edilmesi gereken husus port belirtilmesidir. Toplamda 65535 farklı port bulunmaktadır. NMAP ise en çok kullanılan 1024 portun taramasını gerçekleştirir. Siz kendiniz spesifik olarak bir port ya da port aralığı belirterek aramanızı özelleştirebilirsiniz.<br><br>
+Tarama sonuçlarında portların açık, kapalı ya da filtreli olma durumlarını açıklayalım.
+
+<ul type=”disc”>
+<li><strong>Open </strong>:Portların açık olduğunu belirtir. Bu port üzerinden işlem yapılabilir.</li>
+<li><strong> Closed</strong>:Portların kapalı olduğunu belirtir.Bu port üzerinden işlem yapılamaz. </li>
+<li><strong> Filtered</strong>:Dönen verilerin filtrelendiğini belirtir. Karşı sistemde bir firewall olma durumu yüksektir. </li>
+<li><strong> Unfiltered</strong>: Bir tarama türü olan ACK Scan ile yapılan taramada bu sonuç çıkabilir.Portların erişilebilir olduğunu ama açık veya kapalı olduğunu anlamadığını belirtir.</li>
+<li><strong>Open | Filtered </strong>: Yine tarama türlerinden UDP,IP,FIN,NULL, ve XMAS Scan ile yapılan taramalarda dönen bu cevapta portların açık veya filtreli olduğunu anlamadığını belirtir.</li>
+<li><strong>Closed | Filtered</strong>: IDLE Scan ile yapılan taramada portların kapalı ve ya filtrelenmiş olduğunu anlamadığını belirtir.</li>
+</ul><br>
+
+Ayrıca NMAP üzerinden tarama gerçekleştirirken birden fazla IP taraması ya da IP aralığı belirterek tarama yapmak mümkündür. Kullanımı aşağıda gösterilmiştir.<br><br>
+<ul type=”disc”>
+<li><strong>nmap 192.168.2.2 </strong>:Tek bir IP için taramayı gerçekleştirir. </li> 
+<li><strong>nmap 192.168.2.2 , 192.168.2.1</strong>:Manuel olarak birden fazla belirtilen IP adreslerini tarar. IP adresinlerinin arasına virgül koyarak taranacak olan IP adreslerini belirtebilirsiniz. </li> 
+
+<li><strong>nmap 192.168.2.5-15 </strong>:5 ila 15 dahil aralarındaki IP adresileri üzerinde tarama gerçelşeştirir. </li> 
+<li><strong>nmap 192.168.2.0/24 </strong>: Subnet (256) taraması gerçekleştirir.</li> 
+<li><strong> nmap –iL örnek.txt</strong>:Belirttiğimiz örnek.txt dosyası içerisindeki adresleri tarar. </li>
+</ul><br>
+
+Bunların yanında taramamızı detaylandırmak için kullanabileceğimiz bazı parametreler mevcuttur. Bu parametrelerin en çok kullanılanları aşağıda gösterilmiştir.<br><br>
+<ul type=”disc”>
+<li><strong>-v</strong>:Tarama sonuçlarını daha detaylı bir biçimde listeler.</li>
+<li><strong>--reason </strong>: Tarama sonuçlarının hangi sebeple oluştuğunu gösterir.</li>
+<li><strong>--traceroute</strong>:Hedefe giderken hangi yönlendiricilerden geçtiğini gösterir.</li>
+<li><strong> -p</strong>:Hangi portların taranacağını manuel olarak seçmeye yarar. </li>
+<li><strong>-n </strong>:Taramayı DNS çözümlemesi yapmadan gerçekleştirmesini belirtir.</li>
+<li><strong> -F</strong>: Hızlı tarama moduyla taramayı gerçekleştirir.</li>
+<li><strong> -open</strong>:Sadece açık olan portları listeler. </li>
+<li><strong>-p-</strong>:Muhtemel tüm portları(65535) tarar. </li>
+<li><strong> -top-ports</strong>: En çok kullanılan portları tarar. Eğer yanına bir sayı belirtirseniz, en çok kullanılan o sayının içerisindeki portları tarar. </li>
+<li><strong> T(0-5)</strong>:NMAP içerisinde 6 farklı tarama hızı vardır. Normal taramalar T3 hızında yapılır. Karşı sistem tarafından dikkat çekmemek için bu tarama hızını düşürebilirsiniz. T0 en yavaş ve T5 en hızlı tarama yöntemidir. </li>
+<li><strong>-O </strong>: Hedef sistemin hangi işletim sistemine sahip olduğunu gösterir.</li>
+<li><strong> -oN </strong>:Tarama sonuçlarını txt olarak kaydetmek için kullanılır. Parametreden sonra kayıt edilme ismi ve txt uzantısı girilir.</li>
+<li><strong>-oX </strong>: Tarama sonuçlarını xml olarak kaydetmek için kullanılır.Parametreden sonra dosya adı ve xml uzantısı girilir. </li>
+
+
+NMAP ile ping atarak host taraması gerçekleştirelim. Bunun için terminalimize nmap –sP “hedef site ip” yazıp taratıyoruz.<br><br>
+
+
+<img src="/resimler/bilgi toplama/nmap/p.JPG" alt="logo"><br><br>
+
+Nmap scan report for kısmında bize host adresini gösteriyor. Biz sanal makine üzerinden test yaptığımız için direk IP adresini gösterdi. Aşağıda opsiyonel olarak yapabileceğiniz ping taramaları gösterilmiştir.<br>
+<ul type=”disc”>
+<li><strong> -PS</strong>: TCP Syn paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PA</strong>: TCP  ACK paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PU</strong>: UDP paketleri kullanarak taramayı gerçekleştirir. </li>
+<li><strong> -PY</strong>: SCTP INIT paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PE </strong>: ICMP Echo paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PP</strong>:ICMP Zaman Damgası paketleri kullanarak taramayı gerçekleştirir .</li>
+<li><strong> -PM</strong>:ICMP  Adres Maskesi  paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PO</strong>: IP Protocol  paketleri kullanarak taramayı gerçekleştirir.</li>
+<li><strong> -PR</strong>:ARP paketleri kullanarak taramayı gerçekleştirir.</li>
+</ul>
+
+
+Örnek olarak NMAP ile standart bir tarama gerçekleştirelim. Daha sonra tarama çeşitlerini detaylı olarak inceleyeceğiz.Terminal üzerinden “nmap hedef IP” yazıp enter tuşuna basarak taratıyoruz.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/1.JPG" alt="logo"><br><br>
+
+
+Taramanın sonunda bizlere hangi portların açık,hangilerinin filtreli olduğu ve hangi servisi kullandıklarını listeledi.<br><br>
+
+
+<strong>TCP Syn Scan</strong><br><br>
+
+TCP SYN bayraklı paket gönderilerek yapılan tarama türüdür. Eğer karşı port açıksa SYN+ACK bayrağı döner.İstemci gelen veriyi RST bayraklı veri paketi ile cevaplar. Yani Three-way Handshake gerçekleşmemiş olsa bile Log kayıtlarında gözükme ihtimali vardır.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/syn.JPG" alt="logo"><br><br>
+Eğer port kapalıysa karşı taraftan RST+ACK bayrağı döner.İletişim sonlandırılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/syc2.JPG" alt="logo"><br><br>
+
+Terminal üzerinden taramamızı gerçekleştiriyoruz. Nmap -sS “hedef IP” yazıyoruz. --reason parametresi ile de sonuçların neden gerçekleştiğini göstermesini istiyoruz.<br><br>
+<img src="/resimler/bilgi toplama/nmap/2.JPG" alt="syn"><br><br>
+
+
+Tarama sonucunda hangi portların açık,hangilerinin kapalı olduğunu bizlere gösterdi. Cevap alınamayan portları filtered olarak raporladı. Cevap alınan portlarda ise neden açık olduğunu yani gelen cevapları bizlere gösterdi.<br><br>
+
+<strong>TCP Connect Scan</strong><br><br>
+Makalenin başında belirttiğimiz gibi klasik Three-way Handshake olayının gerçekleştiği tarama türüdür.Log kayıtlarında görünür. İstemci tarafından SYN bayraklı veri paketi gönderilir. Port açıksa karşı taraftan SYN+ACK bayraklı veri paketleri gelir.Tekrar istemci tarafından ACK bayraklı veri paketi gönderilerek tarama gerçekleşir.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/syc1.JPG" alt="connect"><br><br>
+
+Port kapalıysa karşı taraftan RST+ACK paketi gelir.İletişim sonlandırılır.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/syc2.JPG" alt="syc"><br><br>
+
+
+Terminal üzerinden -sT parametresi ile tarama gerçekleştirilir. <br><br>
+<img src="/resimler/bilgi toplama/nmap/3.JPG" alt="st"><br><br>
+
+
+
+<strong>FIN Scan</strong><br><br>
+
+Hedef sistemde TCP ile bağlantı isteği olmadan yapılan arama türüdür.İstemci tarafından FIN bayraklı bir veri paketi gönderilir.Eğer karşı taraftan yanıt gelmez ise bu o portun açık olduğunu gösterir.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/fn.JPG" alt="fn"><br><br>
+Eğer gönderilen FIN bayraklı veri paketine karşılık olarak RST+ACK bayraklı veri paketi gelirse o portun kapalı olduğunu gösterir.
+
+<img src="/resimler/bilgi toplama/nmap/fn2.JPG" alt="fn"><br><br>
+Terminal üzerinden taramamızı gerçekleştirmek için -sF parametresini yazıyoruz. Burada -v kullanma amacımız sonuçları daha detaylı bir biçimde sunması için.<br><br>
+<img src="/resimler/bilgi toplama/nmap/fin.JPG" alt="fn"><br><br>
+
+<strong>XMas Tree Scan</strong><br><br>
+İstemci tarafından TCP frame içine URG,PSH ve FIN bayrakları ile paket veri paketi gönderimi  yapılır.Eğer yanıt gelmez ise karşı portun açık olduğu anlaşılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/xmas1.JPG" alt="xmas"><br><br>
+
+Eğer gönderilen veri paketine karşılık RST+ACK bayraklı bir veri paketi geliyorsa o port kapalıdır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/xmas2.JPG" alt="xmas"><br><br>
+Terminal üzerinden taramamızı gerçekleştirmek için -sX parametresini kullanıyoruz.<br><br>	
+<img src="/resimler/bilgi toplama/nmap/xmas.JPG" alt="xmas"><br><br>
+
+strong>Null Scan</strong><br><br>
+
+Herhangi bir bayrak içermeyen veri paketleri yollayarak taramayı gerçekleştirir. Eğer karşı sistemden bir cevap alınmazsa o portun açık olduğu anlaşılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/null1.JPG" alt="null"><br><br>
+Eğer port kapalıysa karşı sistemden RST+ACK bayraklı veri paketi dönüşü gelir.
+<img src="/resimler/bilgi toplama/nmap/null2.JPG" alt="null"><br><br>
+
+Terminal üzerinden -sN komutu ile tarama gerçekleştirilir.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/null.JPG" alt="null"><br><br>
+
+
+<strong>Ping Scan</strong><br><br>
+
+
+İstemci tarafından hedef sisteme tek bir ICMP Echo istek paketi yollayarak gerçekleştirdiği tarama türüdür. Eğer port açık ise karşı sistemden ICMP ECHO Reply veri paketi dönecektir.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/pingscan1.JPG" alt="ping"><br><br>
+
+Eğer port kapalı veya ICMP filtresi var ise karşı sistemden herhangi bir cevap alınmayacaktır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/pingscan2.JPG" alt="ping"><br><br>
+
+Terminal üzerinden -sP parametresi ile tarama gerçekleştirilir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/ping.JPG" alt="ping"><br><br>
+
