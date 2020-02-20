@@ -790,7 +790,7 @@ Eğer gönderilen veri paketine karşılık RST+ACK bayraklı bir veri paketi ge
 Terminal üzerinden taramamızı gerçekleştirmek için -sX parametresini kullanıyoruz.<br><br>	
 <img src="/resimler/bilgi toplama/nmap/xmas.JPG" alt="xmas"><br><br>
 
-strong>Null Scan</strong><br><br>
+<strong>Null Scan</strong><br><br>
 
 Herhangi bir bayrak içermeyen veri paketleri yollayarak taramayı gerçekleştirir. Eğer karşı sistemden bir cevap alınmazsa o portun açık olduğu anlaşılır.<br><br>
 <img src="/resimler/bilgi toplama/nmap/null1.JPG" alt="null"><br><br>
@@ -814,4 +814,62 @@ Eğer port kapalı veya ICMP filtresi var ise karşı sistemden herhangi bir cev
 
 Terminal üzerinden -sP parametresi ile tarama gerçekleştirilir.<br><br>
 <img src="/resimler/bilgi toplama/nmap/ping.JPG" alt="ping"><br><br>
+<strong>UDP Scan</strong><br><br>ı
+İstemci tarafından hedef sisteme UDP paketleri gönderilir.Eğer port açık ise aynı şekilde UDP paketi göndererek cevap verir.<br><br>
 
+<img src="/resimler/bilgi toplama/nmap/udp1.JPG" alt="udp"><br><br>
+Eğer port kapalı ise gönderilen UDP paketine karşılık ICMP Port Unreachable cevabı gelecektir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/udp2.JPG" alt="udp"><br><br>
+Eğer UDP paketine karşılık herhangi bir cevap gelmezse port Open | Filtred kabul edilecektir. NMAP tanıtımının başında bu açıklamalar mevcut.<br><br<
+<img src="/resimler/bilgi toplama/nmap/udp2.JPG" alt="udp"><br><br>
+Terminal üzerinden -sU parametresi ile tarama gerçekleştirilir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/udp.JPG" alt="udp"><br><br>
+
+<strong>ACK Scan</strong><br><br>
+İstemci tarafından TCP ACK bayraklı veri paketini gönderildiği tarama türüdür.Hedef sistemden RST bayraklı paket gelirse port Unfiltred olarak kabul edilir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/ack1.JPG" alt="ack"><br><br>
+
+Eğer gönderilen ACK bayraklı veriye karşılık herhangi bir cevap gelmezse veya ICMP mesajı dönerse o port Filtred olarak kabul edilir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/ack2.JPG" alt="ack"><br><br>
+Terminal üzerinden -sA parametresi ile kullanılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/ack.JPG" alt="ack"><br><br>
+
+
+<strong>Window Scan</strong><br><br>
+
+İstemci tarafından TCP ACK bayraklı veri paketinin yollanarak iletişimin başlatıldığı tarama türüdür. ACK taramasından farklı olarak portların açıklık durumunu gösterir.Hedef sistemden RST+win=”sayı” 0’dan farklı ise portun açık olduğu anlaşılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/win1.JPG" alt="win"><br><br>
+Eğer hedef sistemden gelen yanıtta win değeri 0 ise o port kapalı olarak kabul edilir.<br><br>
+<img src="/resimler/bilgi toplama/nmap/win2.JPG" alt="win"><br><br>
+Terminal üzerinden tarama gerçekleştirilirken -sW parametresi kullanılır.<br><br>
+<img src="/resimler/bilgi toplama/nmap/win.JPG" alt="win"><br><br>
+<strong>NMAP İle İşletim Sistemi Taraması </strong><br><br>
+
+NMAP ile hedef sistemin işletim sistemi tespitini yapmak da mümkündür.Bunu için teriminale -O yazarak taramamızı gerçekleştiriyoruz.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/os.JPG" alt="os"><br><br>
+
+Runing kısmında bize işletim sistemini gösteriyor. Biz sanal makine üzerine testlerimizi yaptığımız için birden fazla göstermesi normal.<br><br>
+
+<strong>NMAP İle Versiyon Keşfi</strong><br><br>
+Bir başka tarama özelliğimiz ise çalışan servislerin versiyon tespitini yapmak. Versiyon tespiti yapılırken eğer root iseniz NMAP önce TCP SYN taraması yapıyor, daha sonra portlar ile iletişime geçerek bilgi toplamaya başlıyor.Eğer root değilseniz bu işlemi TCP Syn Scan ile başlatmak yerine TCP Connect Can ile başlatıyor daha sonra portlar ile iletişime geçiyor.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/version.JPG" alt="version"><br><br>
+Version kısmında bizlere çalışan servislerin versiyonlarını gösterdi. Bu versiyon bilgileri ile daha sonra NSE(Nmap Script) ile zafiyet keşfi yapacağız.<br><br>
+
+<strong>NMAP İle Agresif Tarama</strong><br><br>
+Bir başka tarama yöntemi de agresif taramadır. Bu tarama yöntemi ile hedef sistemin port taraması, versiyon tespiti, traceroute tespiti,işletim sistemi tespiti gibi birçok işlemi tek parametre ile yapmak mümkün.Bunun için terminalimizden -A parametresi ile taramamızı gerçekleştiriyoruz.<br><br>
+<img src="/resimler/bilgi toplama/nmap/a1.JPG" alt="agresif"><br><br>
+<img src="/resimler/bilgi toplama/nmap/a2.JPG" alt="agresif"><br><br>
+
+<strong>NMAP NSE Script</strong><br><br>
+
+NMAP içerisinde kendine has özel script dosyaları mevcuttur. Bu dosyaları kullanarak taramaları gerçekleştirebileceğiniz gibi kendiniz manuel olarak girdiğiniz bir script ile de tarama gerçekleştirebilirsiniz. NMAP içerisinde çok fazla sayıda script dosyası bulunmaktadır.Bunların listesine <a href=”https://nmap.org/nsedoc/”>BURAYA TIKLAYARAK</a>  ulaşabilirsiniz. Categories kısmından ise bulmak istediğiniz script türünü özelleştirebilirsiniz.<br><br>
+
+<img src="/resimler/bilgi toplama/nmap/nsecategori.JPG" alt="kategori"><br><br>
+ Örnek olarak kategori kısmında bulunan vuln(zafiyet) taraması gerçekleştirelim.Terminal üzerinden nmap -script vuln “hedef IP” yazıp taramamızı başlatıyoruz.<br><br>
+<img src="/resimler/bilgi toplama/nmap/nse1.JPG" alt="kategori"><br><br>
+<img src="/resimler/bilgi toplama/nmap/nse2.JPG" alt="kategori"><br><br>
+
+NMAP içerisinde bulunan tüm zafiyet scriptlerini hedef IP üzerinde taradı ve VULNERABLE: kısmında bu zafiyetin ne olduğu hakkında bilgi verdi. <br><br>
+Seçtiğimiz bir script ile sorgulama yapmak istersek terminale --script “script adı” “hedef IP” yazıp taramamızı gerçekleştiririz. 
