@@ -154,10 +154,10 @@ Gördüğünüz gibi site sahibinin birçok bilgisi karşımıza çıktı.Bunu b
 
 <img src="/resimler/bilgi toplama/whois/whois4.JPG" alt="whois3"><br><br>
 
-<strong>Reverse Whois<br></strong>
+<strong>Reverse Whois</strong><br><br>
 Reverse Whois site sahibinin e-mail adresi üstünden ya da direk site adı girilerek, kayıtlı olan diğer domain adreslerini bulmaya yarar. İnternet üzerinde birçok Reverse Whois sorgusu yapan siteler mevcuttur.Biz bunlardan reversewhois.io adlı siteyi örnek göstereceğiz.<br><br>
 
-İlk olarak sitemize giriyoruz.Siteye<a href="https://reversewhois.io">BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
+İlk olarak sitemize giriyoruz.Siteye <a href="https://reversewhois.io" target="_blank">BURAYA TIKLAYARAK</a> ulaşabilirsiniz. Daha sonra arama çubuğuna e-posta adresi ya da site adresini yazıyoruz ve enter tuşuna basıyoruz.<br><br>
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
@@ -165,7 +165,7 @@ Karşımıza bu site sahibinin üzerine kayıtlı olan diğer site domainlerini 
 
 <img src="/resimler/bilgi toplama/whois/rwhois1.JPG" alt="rwhois1"><br><br>
 
-<strong>IP Aralığı Tespit Etme</strong><br>
+<strong>IP Aralığı Tespit Etme</strong><br><br>
 İnternet siteleri üzerinden hedef sistemin IP aralıklarını bulabileceğimiz bir çok site mevcuttur. Bunlardan bir kaçını makalemizde örnek olarak göstereceğiz.<b><br>
 
 <strong>Arin.net</strong><br><br>
@@ -195,7 +195,7 @@ Inetnum kısmında sitenin hangi IP aralığında olduğunu biz gösteriyor.<br>
 
 <strong>Apnic.net</strong><br><br>
 
-Üçüncü sorgulama yapacağımız site ise Apnic.Net.Siteye <a href=”https://www.apnic.net/” target=”_blank”>BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
+Üçüncü sorgulama yapacağımız site ise Apnic.Net.Siteye <a href="https://www.apnic.net/" target="_blank">BURAYA TIKLAYARAK</a> ulaşabilirsiniz.<br><br>
 
 Siteye girdiğimizde sağ üst kısımdaki arama kutucuğuna hedef IP adresini yazıp enter tuşuna basıp bekliyoruz.<br><br>
 
@@ -206,7 +206,7 @@ Inetnum kısmında bize IP aralığını gösteriyor.<br><br>
 <center><h1>Archive.Org Nedir?</h1></center><br>
 1996 yılında kurulmuş olan bu site kullanıcılara internet üzerinde kaydettiği dökümanları sunmaktadır.Bu dökümanlar içerisinde resim,video,müzik,kitap,yazılım gibi bir çok seçenek sunmaktadır.Bizim ilgili olduğumuz alan ise bu sitenin aynı zamanda web sitelerinin belirli aralıklarla görüntüsünü kaydetmesidir. Bu yol bize kapanmış bir sitenin, kapanmadan önceki görüntülerine erişme imkânı sağlamaktadır.<br><br>
 
-İlk olarak sitemize giriyoruz.<a href="https://archive.org">Buraya Tıklayarak</a> ulaşabilirsiniz.Sol üst köşeden sarı renkle gösterilmiş olan WEB kısmına tıklıyoruz. Karşımıza WaybackMachine adında bir tarama kutucuğu çıkıyor. <br><br>
+İlk olarak sitemize giriyoruz.<a href="https://archive.org" target="_blank">Buraya Tıklayarak</a> ulaşabilirsiniz.Sol üst köşeden sarı renkle gösterilmiş olan WEB kısmına tıklıyoruz. Karşımıza WaybackMachine adında bir tarama kutucuğu çıkıyor. <br><br>
 
 <img src="/resimler/bilgi toplama/archive/archive1.JPG" alt="archive1"><br><br>
 Bu arama kutucuğuna hedef sitemizin adresini giriyoruz ve enter tuşuna basıyoruz.<br><br>
@@ -216,7 +216,7 @@ Karşımıza yılların sıralandığı çubuk şeklinde bir tarih sırası ve a
 Gördüğünüz gibi seçtiğimiz tarihdeki sitenin görüntüsünü bizlere sundu.<br><br>
 <strong>YouGetSignal İle Bilgi Toplama</strong><br><br>
 	
-Pasif bilgi toplama sürecinde bize yardımcı olan sitelerden bir diğeri de YouGetSignal adlı web sitesidir.Siteye <a href=https://www.yougetsignal.com> BURAYA TIKLAYARAK</a> ulaşabilirsiniz.
+Pasif bilgi toplama sürecinde bize yardımcı olan sitelerden bir diğeri de YouGetSignal adlı web sitesidir.Siteye <a href="https://www.yougetsignal.com" target="_blank"> BURAYA TIKLAYARAK</a> ulaşabilirsiniz.
 <br>
 İlk olarak sitemize giriş yapıyoruz. Karşımıza tools kısımlı bir pencere çıkıyor. Burada site içerisinde yapabileceğimiz taramalar mevcuttur. Her birinin açıklaması aşağıda verilmiştir.
 <img src="/resimler/bilgi toplama/webs/yougetsignal.JPG" alt="yougetsignal"><br><br>
